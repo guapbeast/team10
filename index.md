@@ -14,3 +14,11 @@
 | Allie Xiao | --- | [Allie's Commits](https://github.com/guapbeast/team10/commits?author=xiaoa0) | [Allie's Github Profile](https://github.com/xiaoa0) |
 | Aidan Wu | Backend Developer | [Aidan's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | [Aidan's Github Profile](https://github.com/aidanywu) |
 
+## Del Norte High School
+
+<div class="row"> <!--- make a new row -->
+  <!-- each column is one-third of width -->
+  <div class="column">
+    <img src="/images/coram-ranch-arial.png" alt="site" style="width:100%">
+  </div>
+
