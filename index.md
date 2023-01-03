@@ -1,7 +1,7 @@
 ## Team 10 Website
 > View [Del Norte High School](https://www.powayusd.com/dnhs) to learn about Del Norte High. 
-- [Video Tour](https://youtu.be/kX24Zv1CJZA)
-- [Google Maps 16601 Nighthawk Lane, San Diego, California 92127](https://www.google.com/maps/place/14251+Coram+Rd,+Shasta+Lake,+CA+96019/@40.707988,-122.44701,16z/data=!4m5!3m4!1s0x54d28be161c895ef:0xca3b8805b9b6a5ec!8m2!3d40.7079882!4d-122.4470104?hl=en)
+- [Nighthawk Coding Society](https://youtu.be/kX24Zv1CJZA)
+- [Google Maps 16601 Nighthawk Lane, San Diego, California 92127](https://www.google.com/maps/dir//Del+Norte+High+School,+16601+Nighthawk+Ln,+San+Diego,+CA+92127/@33.0133188,-117.1247439,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x80dba1ec35227da1:0x59bf2ef553075a2b!2m2!1d-117.1214139!2d33.0144484!3e0)
 
 
 
