@@ -10,8 +10,6 @@
 | --- | --- | --- | --- |
 | Jun Lim | --- | [Jun's Commits](https://github.com/guapbeast/team10/commits?author=the1jun) | Check in | 
 | Ŕithwikh Várma | Scrum Master | [Ŕithwikh's Commits](https://github.com/guapbeast/team10/commits?author=guapbeast) | Dinner | 
-| --- | --- | 7pm | Leuck Greet |
-| 6/27 | Tuesday | 8am | Breakfast |
-| --- | --- | 10am | Greet Games |
-| --- | --- | 12pm | Make & Go Lunch |
+| Allie Xiao | --- | [Allie's Commits](https://github.com/guapbeast/team10/commits?author=xiaoa0) | Leuck Greet |
+| Aidan Wu | Backend Developer | [Aidan's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | Breakfast |
 
