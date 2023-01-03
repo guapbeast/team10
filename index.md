@@ -19,8 +19,8 @@
 <div class="row"> <!--- make a new row -->
   <!-- each column is one-third of width -->
   <div class="column">
-    <img src="/images/delnorte.jpeg" alt="site" style="width:100%">
+    <img src="/images/delnorte.jpeg" alt="school" style="width:100%">
   </div>
 <div class="column">
-    <img src="/images/delnorte-aerial.jpeg" alt="site" style="width:100%">
+    <img src="/images/delnorte-aerial.jpeg" alt="school" style="width:100%">
   </div>
