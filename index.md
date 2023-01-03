@@ -7,11 +7,11 @@
 ## About the Creators
 
 | Name | Role | Commits | Profile |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | Jun Lim | --- | [Jun's Commits](https://github.com/guapbeast/team10/commits?author=the1jun) | Check in | 
 | Ŕithwikh Várma | Scrum Master | [Ŕithwikh's Commits](https://github.com/guapbeast/team10/commits?author=guapbeast) | Dinner | 
-| --- | --- | 7pm | Leuck Greet | Dining Room | Frank and Judith |
-| 6/27 | Tuesday | 8am | Breakfast | Dining Room | Lisa |
-| --- | --- | 10am | Greet Games | Field and Court | Johnner, Lora, Shay|
-| --- | --- | 12pm | Make & Go Lunch | Dining Room | Lisa |
+| --- | --- | 7pm | Leuck Greet |
+| 6/27 | Tuesday | 8am | Breakfast |
+| --- | --- | 10am | Greet Games |
+| --- | --- | 12pm | Make & Go Lunch |
 
