@@ -19,6 +19,6 @@
 <div class="row"> <!--- make a new row -->
   <!-- each column is one-third of width -->
   <div class="column">
-    <img src="/images/coram-ranch-arial.png" alt="site" style="width:100%">
+    <img src="/images/delnorte.jpeg" alt="site" style="width:100%">
   </div>
 
