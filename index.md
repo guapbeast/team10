@@ -21,4 +21,6 @@
   <div class="column">
     <img src="/images/delnorte.jpeg" alt="site" style="width:100%">
   </div>
-
+<div class="column">
+    <img src="/images/delnorte-aerial.jpeg" alt="site" style="width:100%">
+  </div>
