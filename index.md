@@ -1,6 +1,6 @@
 ## Team 10 Website
 > View [Del Norte High School](https://www.powayusd.com/dnhs) to learn about Del Norte High. 
-- [Nighthawk Coding Society](https://youtu.be/kX24Zv1CJZA)
+- [Nighthawk Coding Society](https://csacoders.nighthawkcodingsociety.com/)
 - [Google Maps 16601 Nighthawk Lane, San Diego, California 92127](https://www.google.com/maps/dir//Del+Norte+High+School,+16601+Nighthawk+Ln,+San+Diego,+CA+92127/@33.0133188,-117.1247439,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x80dba1ec35227da1:0x59bf2ef553075a2b!2m2!1d-117.1214139!2d33.0144484!3e0)
 
 
