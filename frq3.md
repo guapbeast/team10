@@ -80,7 +80,7 @@ var cal = document.getElementById("calcu");
       //   },
       //   body: expression
       // };
-      fetch(url + expression, {cors: "no-cors"})
+      fetch(url + expression)
       .then((response) => {
         console.log(response)
       // check for response errors
