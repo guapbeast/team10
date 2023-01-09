@@ -1,46 +1,93 @@
-<style> @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+Pro:wght@200;700&display=swap'); </style>
-<button onclick="calculator()">Calculator</button>
-
-<p>Answer:</p>
-<p id="answer"></p>
-
-
-
-
-<script>
-  
-  function calculator() {
-    let expression = prompt("Equation?");
-
-    const urlStart = "https://music.nighthawkcoders.tk/api/calculator/";
-    const url = urlStart + expression;
-
-    console.log(url); 
-
-    fetch(url)
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        
-        document.getElementById("answer").innerHTML = data.result; 
-      
-      })
-      
-  }
-</script>
-
-<style> 
-button {
-	width: 100px;
-	height: 35px;
-	font-size: 16px;
-	background-color: #333;
-	color: #fff;
-	border: none;
-	cursor: pointer;
-}
-
-p {
-  font-size: 18px;
-}
-</style>
+<form method="GET" id="calcForm">
+                <table style="height:50%" id="calcu" class="container">
+                    <tr>
+                        <td><input style="width: 90%" type="text" class="result" name="input" id="calcFormInput" th:value="${output}" /><input style="width: 10% ; height: 50px" type="button" value="c" onclick="clr()" /> </td>
+                    </tr>
+                    <tr class="first-row">
+                        <!-- create button and assign value to each button -->
+                        <!-- dis("1") will call function dis to display value -->
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="1" onclick="dis('1')" class="box" name="" onkeydown="myFunction(event)" /></td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="2" onclick="dis('2')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="3" onclick="dis('3')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="/" onclick="dis('/')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                    </tr>
+                    <tr class="second-row">
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="4" onclick="dis('4')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="5" onclick="dis('5')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="6" onclick="dis('6')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="*" onclick="dis('*')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                    </tr>
+                    <tr class="third-row">
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="7" onclick="dis('7')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="8" onclick="dis('8')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="9" onclick="dis('9')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                                    <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="-" onclick="dis('-')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                    </tr>
+                    <tr class="conflict">
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="0" onclick="dis('0')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="." onclick="dis('.')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                        <!-- solve function call function solve to evaluate value -->
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="submit" name="" value="Submit" class=" green white-text big" /> </td>
+                        <td style="padding: 1px"><input style="width: 100px; height:100px" type="button" value="+" onclick="dis('+')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+                    </tr>
+                </table>
+            </form>
+            <script>
+                // Function that display value
+                function dis(val) {
+                    document.getElementById("calcFormInput").value += val;
+                    varvar = document.getElementById("calcFormInput").value;
+                    console.log("varvar");
+                }
+                function myFunction(event) {
+                    if (event.key == '0' || event.key == '1' 
+                        || event.key == '2' || event.key == '3'
+                        || event.key == '4' || event.key == '5' 
+                        || event.key == '6' || event.key == '7'
+                        || event.key == '8' || event.key == '9' 
+                        || event.key == '+' || event.key == '-'
+                        || event.key == '*' || event.key == '/')
+                        document.getElementById("calcFormInput").value += event.key;
+                }
+          var cal = document.getElementById("calcu");
+                cal.onkeyup = function (event) {
+                    if (event.keyCode === 13) {
+                        console.log("Enter");
+                        let x = document.getElementById("calcFormInput").value
+                        console.log(x);
+                    }
+                }
+          // Function that clear the display
+                function clr() {
+                    document.getElementById("calcFormInput").value = ""
+                }
+                function submitform(event) {
+                  event.preventDefault();
+                  const inputElement = document.getElementById("calcFormInput")   ;                                 
+                  const expression = inputElement.value;                  
+                  const url = "https://music.nighthawkcoders.tk/api/calculator/"
+                  fetch(url, {cors: "no-cors", body: expression})
+                  .then((response) => {
+                  // check for response errors
+                    if (response.status == 200) {
+                      return response.json().then((data) => {
+                        inputElement.value = data.result;
+                      });
+                    } else if (response.status == 400){
+                      return response.json().then((data) => {
+                        inputElement.value = data.error;
+                      }); 
+                    } else {
+                      return response.text().then(text => {
+                        console.log(text);
+                      });
+                    }
+                  })
+                  .catch(e => {
+                    console.error(e);
+                    inputElement.value = "invalid expression";
+                  })
+                }
+                const form = document.getElementById("calcForm");
+                form.addEventListener("submit", submitform);
+            </script>
