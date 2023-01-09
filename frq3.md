@@ -80,8 +80,8 @@ var cal = document.getElementById("calcu");
         },
         body: expression
       };
-      console.log(url + expression);
-      fetch(url + expression, options)
+      console.log(url);
+      fetch(url, options)
         .then(res => res.json())
         .then(data => {
           console.log(data);
