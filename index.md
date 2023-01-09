@@ -10,7 +10,7 @@
 | Name | Role | Commits | Profile |
 | --- | --- | --- | --- |
 | Jun Lim | Frontend Developer | [Jun's Commits](https://github.com/guapbeast/team10/commits?author=peacekeeper6) | [Jun's Github Profile](https://github.com/peacekeeper6) | 
-| Ŕithwikh Várma | Scrum Master | [Ŕithwikh's Commits](https://github.com/guapbeast/team10/commits?author=guapbeast) | [Ŕithwikh's Github Profile](https://github.com/guapbeast) | 
+| Ŕithwikh Várma | Scrum Master | [Theme Change](https://github.com/guapbeast/team10/commit/b3f009dcffd597858023fa641117ac8e5090dcab) | [Ŕithwikh's Github Profile](https://github.com/guapbeast) | 
 | Allie Xiao | --- | [Allie's Commits](https://github.com/guapbeast/team10/commits?author=xiaoa0) | [Allie's Github Profile](https://github.com/xiaoa0) |
 | Aidan Wu | Backend Developer | [Aidan's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | [Aidan's Github Profile](https://github.com/aidanywu) |
 
