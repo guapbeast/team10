@@ -48,9 +48,6 @@
   
          document.getElementById("userInfoWeight").innerHTML = 
         "weight: " + data.weight;
-  
-          document.getElementById("userInfoIncome").innerHTML = 
-        "income: " + data.income;
       
       })
   }
