@@ -87,7 +87,7 @@ var cal = document.getElementById("calcu");
           console.log(data);
           console.log(data['results']);
           console.log(inputElement.value);
-          inputElement.value = data.result;
+          inputElement.value = data['results'];
           console.log(inputElement.value);
         })
       // fetch(url + expression)
