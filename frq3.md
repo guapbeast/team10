@@ -76,9 +76,6 @@ var cal = document.getElementById("calcu");
         credentials: 'same-origin', // include, same-origin, omit
         headers: {
           'Content-Type': 'text/plain',
-          'Connection': 'keep-alive',
-          'Accept-Encoding': 'gzip, deflate, br',
-          'Accept': '*/*'
           //'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: expression
