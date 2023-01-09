@@ -80,28 +80,34 @@ var cal = document.getElementById("calcu");
       //   },
       //   body: expression
       // };
+      console.log(url + expression);
       fetch(url + expression)
-      .then((response) => {
-        console.log(response)
-      // check for response errors
-        if (response.status == 200) {
-          return response.json().then((data) => {
-            inputElement.value = data.result;
-          });
-        } else if (response.status == 400){
-          return response.json().then((data) => {
-            inputElement.value = data.error;
-          }); 
-        } else {
-          return response.text().then((text) => {
-            console.log(text);
-          });
-        }
-      })
-      .catch(e => {
-        console.error(e);
-        inputElement.value = "invalid expression";
-      })
+        .then(res => res.json())
+        .then(data => {console.log(data);
+          inputElement.value = data.result; 
+        })
+      // fetch(url + expression)
+      // .then((response) => {
+      //   console.log(response)
+      // // check for response errors
+      //   if (response.status == 200) {
+      //     return response.json().then((data) => {
+      //       inputElement.value = data.result;
+      //     });
+      //   } else if (response.status == 400){
+      //     return response.json().then((data) => {
+      //       inputElement.value = data.error;
+      //     }); 
+      //   } else {
+      //     return response.text().then((text) => {
+      //       console.log(text);
+      //     });
+      //   }
+      // })
+      // .catch(e => {
+      //   console.error(e);
+      //   inputElement.value = "invalid expression";
+      // })
     }
     const form = document.getElementById("calcForm");
     form.addEventListener("submit", submitform);
