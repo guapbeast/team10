@@ -67,7 +67,7 @@ var cal = document.getElementById("calcu");
       const expression = inputElement.value;      
       console.log(expression)
       const url = "https://music.nighthawkcoders.tk/api/calculator/"
-      fetch(url, {cors: "no-cors", headers: {'Accept': 'application/json', 'Content-Type': 'application/json'}, method: "POST", body: expression})
+      fetch(url, {headers: {'Accept': 'application/json', 'Content-Type': 'application/json'}, method: "POST", body: expression})
       .then((response) => {
       // check for response errors
         if (response.status == 200) {
