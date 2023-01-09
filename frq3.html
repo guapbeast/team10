@@ -80,6 +80,7 @@ var cal = document.getElementById("calcu");
       };
       fetch(url, options)
       .then((response) => {
+        console.log(response)
       // check for response errors
         if (response.status == 200) {
           return response.json().then((data) => {
@@ -90,7 +91,7 @@ var cal = document.getElementById("calcu");
             inputElement.value = data.error;
           }); 
         } else {
-          return response.text().then(text => {
+          return response.text().then((text) => {
             console.log(text);
           });
         }
