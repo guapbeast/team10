@@ -64,7 +64,7 @@ var cal = document.getElementById("calcu");
     function submitform(event) {
       event.preventDefault();
       const inputElement = document.getElementById("calcFormInput")   ;                                 
-      const expression = inputElement.value;      
+      const expression = String(inputElement.value);      
       console.log(expression)
       console.log(typeof expression)
       // expression = String(expression)
@@ -75,7 +75,7 @@ var cal = document.getElementById("calcu");
         cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
         credentials: 'same-origin', // include, same-origin, omit
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'text/plain'
           // 'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: expression
