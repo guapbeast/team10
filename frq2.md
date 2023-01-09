@@ -48,6 +48,9 @@
   
          document.getElementById("userInfoWeight").innerHTML = 
         "weight: " + data.weight;
+  
+        document.getElementById("userInfoGoalStep").innerHTML = 
+        "Step Goal: " + data.goalStep;
       
       })
   }
