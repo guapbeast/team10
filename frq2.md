@@ -19,7 +19,7 @@
 <script>
   
   function getUserInfo() {
-    let idInput = prompt("ID?");
+    let idInput = prompt("User ID:");
 
     const urlStart = "https://music.nighthawkcoders.tk/api/person/";
     const url = urlStart + idInput;
@@ -57,7 +57,7 @@
 
 
   function createUser() {
-    let createUserInput = prompt("Create user info?");
+    let createUserInput = prompt("User Info:");
 
     const urlStart = "https://music.nighthawkcoders.tk/api/person/post";
     const url = urlStart;
