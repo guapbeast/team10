@@ -10,7 +10,7 @@
 <p id="userInfoDob"></p>
 <p id="userInfoHeight"></p>
 <p id="userInfoWeight"></p>
-<p id="userInfoIncome"></p>
+<p id="userInfoGoalStep"></p>
 <p id="userInfoStats"></p>
 
 
