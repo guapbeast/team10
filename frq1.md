@@ -6,7 +6,7 @@ function numberOfLeapYears(year1, year2) {
 
     result = document.getElementById("numberOfLeapYearsResult");
 
-    fetch('https://music.nighthawkcodingsociety.tk/api/calendar/numberOfLeapYears/' + year1 + "/" + year2)
+    fetch('https://music.nighthawkcodingsociety.tk/api/calendar/numberOfLeapYears/' + year1 + "-" + year2)
     .then(response => response.json())
     .then(data => {
 
@@ -37,7 +37,7 @@ function isLeapYear(year) {
 
     result = document.getElementById("isLeapYearResult");
 
-    fetch('https://music.nighthawkcodingsociety.tk/api/calendar/numberOfLeapYears/' + year)
+    fetch('https://music.nighthawkcodingsociety.tk/api/calendar/isLeapYear/' + year)
     .then(response => response.json())
     .then(data => {
 
