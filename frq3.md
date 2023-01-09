@@ -68,7 +68,7 @@ var cal = document.getElementById("calcu");
       console.log(expression)
       console.log(typeof expression)
       // expression = String(expression)
-      const url = "https://music.nighthawkcoders.tk/api/calculator/calculate"
+      const url = "https://music.nighthawkcoders.tk/api/calculator/"
       // const options = {
       //   method: 'POST', // *GET, POST, PUT, DELETE, etc.
       //   mode: 'no-cors', // no-cors, *cors, same-origin
