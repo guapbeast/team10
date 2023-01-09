@@ -56,7 +56,7 @@ function isLeapYear(year) {
 <p id="isLeapYearResult"></p>
 
 ### Check Number of Leap Years in a Range
-<input id="inputYear1" placeholder="Input Starting Year">
-    <input id="inputYear2" placeholder="Input Ending Year">
+<input id="inputYear1" placeholder="Starting Year">
+    <input id="inputYear2" placeholder="Ending Year">
     <button onclick="numberOfLeapYears(getYear1(), getYear2())">Submit</button>
 <p id="numberOfLeapYearsResult"></p>
