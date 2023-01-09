@@ -69,24 +69,26 @@ var cal = document.getElementById("calcu");
       console.log(typeof expression)
       // expression = String(expression)
       const url = "https://music.nighthawkcoders.tk/api/calculator/calculate"
-      const options = {
-        method: 'POST', // *GET, POST, PUT, DELETE, etc.
-        mode: 'no-cors', // no-cors, *cors, same-origin
-        cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'same-origin', // include, same-origin, omit
-        headers: {
-          'Content-Type': 'text/plain',
-          //'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: expression
-      };
-      console.log(url);
-      fetch(url, options)
+      // const options = {
+      //   method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      //   mode: 'no-cors', // no-cors, *cors, same-origin
+      //   cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+      //   credentials: 'same-origin', // include, same-origin, omit
+      //   headers: {
+      //     'Content-Type': 'text/plain',
+      //     //'Content-Type': 'application/x-www-form-urlencoded',
+      //   },
+      //   body: expression
+      // };
+      console.log(url + expression);
+      fetch(url + expression)
         .then(res => res.json())
         .then(data => {
           console.log(data);
           console.log(data.result);
-          inputElement.value = data.result; 
+          console.log(inputElement.value);
+          inputElement.value = data.result;
+          console.log(inputElement.value);
         })
       // fetch(url + expression)
       // .then((response) => {
