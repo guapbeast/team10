@@ -1,6 +1,6 @@
 <style> @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+Pro:wght@200;700&display=swap'); </style>
 <style>
-  button{
+  input[type=button] {
     display: inline-block;
     outline: none;
     cursor: pointer;
@@ -8,7 +8,7 @@
     line-height: 20px;
     font-weight: 600;
     border-radius: 8px;
-    padding: 14px 24px;
+    /* padding: 14px 24px; */
     border: none;
     transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
     background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
