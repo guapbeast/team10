@@ -66,7 +66,7 @@
                   const inputElement = document.getElementById("calcFormInput")   ;                                 
                   const expression = inputElement.value;                  
                   const url = "https://music.nighthawkcoders.tk/api/calculator/"
-                  fetch(url, {cors: "no-cors", body: expression})
+                  fetch(url, {cors: "no-cors", headers: {'Accept': 'application/json', 'Content-Type': 'application/json'}, method: "GET", body: expression})
                   .then((response) => {
                   // check for response errors
                     if (response.status == 200) {
