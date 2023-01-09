@@ -18,7 +18,7 @@
 <form method="GET" id="calcForm">
     <table style="height:50%" id="calcu" class="container">
         <tr>
-            <td colspan='3'><input style="width: 90%" type="text" class="result" name="input" id="calcFormInput" th:value="${output}" /><input style="width: 10% ; height: 50px" type="button" value="c" onclick="clr()" /> </td>
+            <td colspan='4'><input style="width: 80%" type="text" class="result" name="input" id="calcFormInput" th:value="${output}" /><input style="width: 20% ; height: 50px" type="button" value="c" onclick="clr()" /> </td>
         </tr>
         <tr class="first-row">
             <!-- create button and assign value to each button -->
