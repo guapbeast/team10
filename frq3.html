@@ -66,6 +66,8 @@ var cal = document.getElementById("calcu");
       const inputElement = document.getElementById("calcFormInput")   ;                                 
       const expression = inputElement.value;      
       console.log(expression)
+      console.log(typeof expression)
+      expression = String(expression)
       const url = "https://music.nighthawkcoders.tk/api/calculator/"
       const options = {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
