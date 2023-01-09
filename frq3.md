@@ -85,7 +85,7 @@ var cal = document.getElementById("calcu");
         .then(res => res.json())
         .then(data => {
           console.log(data);
-          console.log(data.result);
+          console.log(data['results']);
           console.log(inputElement.value);
           inputElement.value = data.result;
           console.log(inputElement.value);
