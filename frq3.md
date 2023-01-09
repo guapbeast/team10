@@ -1,6 +1,6 @@
 <style> @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+Pro:wght@200;700&display=swap'); </style>
 <style>
-  input[type=button] {
+  input[type=button], input[type=submit]{
     display: inline-block;
     outline: none;
     cursor: pointer;
@@ -18,7 +18,7 @@
 <form method="GET" id="calcForm">
     <table style="height:50%" id="calcu" class="container">
         <tr>
-            <td><input style="width: 90%" type="text" class="result" name="input" id="calcFormInput" th:value="${output}" /><input style="width: 10% ; height: 50px" type="button" value="c" onclick="clr()" /> </td>
+            <td colspan='3'><input style="width: 90%" type="text" class="result" name="input" id="calcFormInput" th:value="${output}" /><input style="width: 10% ; height: 50px" type="button" value="c" onclick="clr()" /> </td>
         </tr>
         <tr class="first-row">
             <!-- create button and assign value to each button -->
