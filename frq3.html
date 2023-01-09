@@ -67,7 +67,18 @@ var cal = document.getElementById("calcu");
       const expression = inputElement.value;      
       console.log(expression)
       const url = "https://music.nighthawkcoders.tk/api/calculator/"
-      fetch(url, {headers: {'Accept': 'application/json', 'Content-Type': 'application/json'}, method: "POST", body: expression})
+      const options = {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      mode: 'cors', // no-cors, *cors, same-origin
+      cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'same-origin', // include, same-origin, omit
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: expression
+    };
+      fetch(url, options)
       .then((response) => {
       // check for response errors
         if (response.status == 200) {
