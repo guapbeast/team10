@@ -1,8 +1,8 @@
 <!--- This section is Cascading Style Sheet (CSS) and applies to HTML -->
 <style>
 /* "row style" is flexible size and aligns pictures in center */
-.body {
-  
+.body { 
+  background-color: #1DE1FC; 
 }
 
 /* "column style" is one-third of the width with padding */
