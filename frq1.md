@@ -38,7 +38,7 @@ function numberOfLeapYears() {
 
 </script>
 
-<input id="inputYear" placeholder="Input a Year">
+<input id="inputYear" placeholder="Year">
 <button onclick="isLeapYear()">Submit</button>
 <p id="isLeapYearResult"></p>
 
