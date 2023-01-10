@@ -23,29 +23,29 @@
         <tr class="first-row">
             <!-- create button and assign value to each button -->
             <!-- dis("1") will call function dis to display value -->
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="1" onclick="dis('1')" class="box" name="" onkeydown="myFunction(event)" /></td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="2" onclick="dis('2')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="3" onclick="dis('3')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="/" onclick="dis('/')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="1" onclick="dis('1')" class="box" name="" onkeydown="myFunction(event)" /></td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="2" onclick="dis('2')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="3" onclick="dis('3')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="/" onclick="dis('/')" class="box" name="" onkeydown="myFunction(event)" /> </td>
         </tr>
         <tr class="second-row">
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="4" onclick="dis('4')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="5" onclick="dis('5')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="6" onclick="dis('6')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="*" onclick="dis('*')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="4" onclick="dis('4')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="5" onclick="dis('5')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="6" onclick="dis('6')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="*" onclick="dis('*')" class="box" name="" onkeydown="myFunction(event)" /> </td>
         </tr>
         <tr class="third-row">
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="7" onclick="dis('7')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="8" onclick="dis('8')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="9" onclick="dis('9')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="-" onclick="dis('-')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="7" onclick="dis('7')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="8" onclick="dis('8')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="9" onclick="dis('9')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="-" onclick="dis('-')" class="box" name="" onkeydown="myFunction(event)" /> </td>
         </tr>
         <tr class="conflict">
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="." onclick="dis('.')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="0" onclick="dis('0')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="." onclick="dis('.')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="0" onclick="dis('0')" class="box" name="" onkeydown="myFunction(event)" /> </td>
             <!-- solve function call function solve to evaluate value -->
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="submit" name="" value="Submit" class=" green white-text big" /> </td>
-            <td style="padding: 1px"><input style="width: 100%; height:125px" type="button" value="+" onclick="dis('+')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="submit" name="" value="Submit" class=" green white-text big" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="+" onclick="dis('+')" class="box" name="" onkeydown="myFunction(event)" /> </td>
         </tr>
     </table>
 </form>
