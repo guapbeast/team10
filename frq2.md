@@ -1,9 +1,6 @@
 <h3>Users and Info</h3>
 <center>
 <table>
-<h3>Users and Info</h3>
-<center>
-<table>
     <thead>
     <tr>
       <th>ID</th>
@@ -19,20 +16,11 @@
     <tbody id="result">
       <!-- javascript generated data -->
     </tbody>
-    <tbody id="result">
-      <!-- javascript generated data -->
-    </tbody>
   </table>
-</center>
 </center>
 <script>
   const url = "https://music.nighthawkcoders.tk/api/person";
-  const url = "https://music.nighthawkcoders.tk/api/person";
   const options = {
-      method: 'GET', // *GET, POST, PUT, DELETE, etc.
-      mode: 'cors', // no-cors, *cors, same-origin
-      cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'same-origin', // include, same-origin, omit
       method: 'GET', // *GET, POST, PUT, DELETE, etc.
       mode: 'cors', // no-cors, *cors, same-origin
       cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
@@ -40,11 +28,8 @@
       headers: {
           'Content-Type': 'application/json'
           // 'Content-Type': 'application/x-www-form-urlencoded',
-  },
-          'Content-Type': 'application/json'
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-  },
-  };
+      },
+      };
   fetch(url, options)
   // response is a RESTful "promise" on any successful fetch
   .then(response => {
@@ -171,25 +156,7 @@
         return data
       })
   }
-  function deleteUser() {
-    const id = document.getElementByID("deleteId").value
-    fetch("https://music.nighthawkcoders.tk/api/person/delete/" + id, {
-        method: 'DELETE',
-        mode: 'cors', // no-cors, *cors, same-origin
-        cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'same-origin', // include, same-origin, omit
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    location.reload()
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        return data
-      })
-  }
-  function deleteUser() {
+  function deleteUserById() {
     const id = document.getElementByID("deleteId").value
     fetch("https://music.nighthawkcoders.tk/api/person/delete/" + id, {
         method: 'DELETE',
@@ -202,7 +169,19 @@
     })
     location.reload()
   }
-  
+  function deleteUserByEmail() {
+    const email = document.getElementByID("deleteEmail").value
+    fetch("https://music.nighthawkcoders.tk/api/person/del/" + email, {
+        method: 'DELETE',
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, same-origin, omit
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    location.reload()
+  }
   
 </script>
 
@@ -216,17 +195,7 @@
 
 
 <input id="deleteId" placeholder="Id">
-<button onclick="deleteUser()">Delete user</button>
+<button onclick="deleteUserById()">Delete user</button>
 
-
-<input id="inputEmail" placeholder="Email">
-<input id="inputPassword" placeholder="Password">
-<input id="inputName" placeholder="Name">
-<input id="inputDob" placeholder="Date of Birth">
-<input id="inputHeight" placeholder="Height">
-<input id="inputWeight" placeholder="Weight">
-<button onclick="createUser()">Create user</button>
-
-
-<input id="deleteId" placeholder="Id">
-<button onclick="deleteUser()">Delete user</button>
+<input id="deleteEmail" placeholder="Id">
+<button onclick="deleteUserByEmail()">Delete user</button>
