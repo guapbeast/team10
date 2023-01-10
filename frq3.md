@@ -18,35 +18,35 @@
 <form method="GET" id="calcForm">
     <table style="height:50%" id="calcu" class="container">
         <tr>
-            <td colspan='3' style="padding: 1px"><input style="border: 3px solid #555; width: 100%; height: 125px; font-size: 13pt" type="text" class="result" name="input" id="calcFormInput" th:value="${output}" /></td>
-            <td style="padding: 1px"><input style="width: 125px ; height: 125px" type="button" value="C" onclick="clr()" /></td>
+            <td colspan='3' style="padding: 1px"><input style="border: 3px solid #555; width: 100%; height: 175px; font-size: 35pt; font-family: courier, monospace" type="text" class="result" name="input" id="calcFormInput" th:value="${output}" /></td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="C" onclick="clr()" /></td>
         </tr>
         <tr class="first-row">
             <!-- create button and assign value to each button -->
             <!-- dis("1") will call function dis o display value -->
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="1" onclick="dis('1')" class="box" name="" onkeydown="myFunction(event)" /></td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="2" onclick="dis('2')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="3" onclick="dis('3')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="/" onclick="dis('/')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="1" onclick="dis('1')" class="box" name="" onkeydown="myFunction(event)" /></td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="2" onclick="dis('2')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="3" onclick="dis('3')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="/" onclick="dis('/')" class="box" name="" onkeydown="myFunction(event)" /> </td>
         </tr>
         <tr class="second-row">
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="4" onclick="dis('4')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="5" onclick="dis('5')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="6" onclick="dis('6')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="*" onclick="dis('*')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="4" onclick="dis('4')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="5" onclick="dis('5')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="6" onclick="dis('6')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="*" onclick="dis('*')" class="box" name="" onkeydown="myFunction(event)" /> </td>
         </tr>
         <tr class="third-row">
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="7" onclick="dis('7')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="8" onclick="dis('8')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="9" onclick="dis('9')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="-" onclick="dis('-')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="7" onclick="dis('7')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="8" onclick="dis('8')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="9" onclick="dis('9')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="-" onclick="dis('-')" class="box" name="" onkeydown="myFunction(event)" /> </td>
         </tr>
         <tr class="conflict">
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="." onclick="dis('.')" class="box" name="" onkeydown="myFunction(event)" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="0" onclick="dis('0')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="." onclick="dis('.')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="0" onclick="dis('0')" class="box" name="" onkeydown="myFunction(event)" /> </td>
             <!-- solve function call function solve to evaluate value -->
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="submit" name="" value="=" class=" green white-text big" /> </td>
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="+" onclick="dis('+')" class="box" name="" onkeydown="myFunction(event)" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="submit" name="" value="=" class=" green white-text big" /> </td>
+            <td style="padding: 1px"><input style="width: 100%; height: 175px" type="button" value="+" onclick="dis('+')" class="box" name="" onkeydown="myFunction(event)" /> </td>
         </tr>
     </table>
 </form>
