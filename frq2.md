@@ -127,12 +127,12 @@
     const urlStart = "https://music.nighthawkcoders.tk/api/person/post";
     const url = urlStart;
     console.log(url); 
-    const email = document.getElementByID("inputEmail").value
-    const password = document.getElementByID("inputPassword").value
-    const name = document.getElementByID("inputName").value
-    const dob = document.getElementByID("inputDob").value
-    const height = document.getElementByID("inputHeight").value
-    const weight = document.getElementByID("inputWeight").value
+    const email = document.getElementById("inputEmail").value
+    const password = document.getElementById("inputPassword").value
+    const name = document.getElementById("inputName").value
+    const dob = document.getElementById("inputDob").value
+    const height = document.getElementById("inputHeight").value
+    const weight = document.getElementById("inputWeight").value
     fetch(url, {
         method: 'POST',
         mode: 'no-cors', // no-cors, *cors, same-origin
@@ -156,7 +156,7 @@
       })
   }
   function deleteUserById() {
-    const id = document.getElementByID("deleteId").value
+    const id = document.getElementById("deleteId").value
     fetch("https://music.nighthawkcoders.tk/api/person/delete/" + id, {
         method: 'DELETE',
         mode: 'cors', // no-cors, *cors, same-origin
@@ -172,7 +172,7 @@
     location.reload()
   }
   function deleteUserByEmail() {
-    const email = document.getElementByID("deleteEmail").value
+    const email = document.getElementById("deleteEmail").value
     fetch("https://music.nighthawkcoders.tk/api/person/del/" + email, {
         method: 'DELETE',
         mode: 'cors', // no-cors, *cors, same-origin
