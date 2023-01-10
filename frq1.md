@@ -1,4 +1,9 @@
 <br>
+    <input id="year1" type="text" placeholder="Year 1" />
+    <input id="year2" type="text" placeholder="Year 2" />
+    <button type="submit" onclick="numberOfLeapYears()">Submit</button>
+    <p>Number of Leap Years:</p>
+    <p id="bruh"></p>
 
 <script>
 
@@ -6,8 +11,8 @@ function isLeapYear() {
     let year = document.getElementById("inputYear").value;
 
     fetch(`https://music.nighthawkcodingsociety.tk/api/calendar/isLeapYear/${year}`)
-    .then((data) => data.json())
-    .then((data) => {
+    .then(data => data.json())
+    .then(data => {
 
         console.log(data);
         document.getElementById(
@@ -24,8 +29,8 @@ function numberOfLeapYears() {
     console.log(year1);
 
     fetch(`https://music.nighthawkcodingsociety.tk/api/calendar/numberOfLeapYears/${year1}-${year2}`)
-    .then((data) => data.json())
-    .then((data) => {
+    .then(data => data.json())
+    .then(data => {
 
         console.log(data);
         document.getElementById(
