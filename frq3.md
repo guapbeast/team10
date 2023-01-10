@@ -18,11 +18,12 @@
 <form method="GET" id="calcForm">
     <table style="height:50%" id="calcu" class="container">
         <tr>
-            <td colspan='4'><input style="width: 80%" type="text" class="result" name="input" id="calcFormInput" th:value="${output}" /><input style="width: 20% ; height: 50px" type="button" value="c" onclick="clr()" /> </td>
+            <td colspan='3' style="padding: 1px"><input style="width: 90%" type="text" class="result" name="input" id="calcFormInput" th:value="${output}" /></td>
+            <td style="padding: 1px"><input style="border: 3px solid #555; width: 125px ; height: 125px" type="button" value="C" onclick="clr()" /></td>
         </tr>
         <tr class="first-row">
             <!-- create button and assign value to each button -->
-            <!-- dis("1") will call function dis to display value -->
+            <!-- dis("1") will call function dis o display value -->
             <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="1" onclick="dis('1')" class="box" name="" onkeydown="myFunction(event)" /></td>
             <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="2" onclick="dis('2')" class="box" name="" onkeydown="myFunction(event)" /> </td>
             <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="3" onclick="dis('3')" class="box" name="" onkeydown="myFunction(event)" /> </td>
@@ -44,7 +45,7 @@
             <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="." onclick="dis('.')" class="box" name="" onkeydown="myFunction(event)" /> </td>
             <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="0" onclick="dis('0')" class="box" name="" onkeydown="myFunction(event)" /> </td>
             <!-- solve function call function solve to evaluate value -->
-            <td style="padding: 1px"><input style="width: 125px; height:125px" type="submit" name="" value="Submit" class=" green white-text big" /> </td>
+            <td style="padding: 1px"><input style="width: 125px; height:125px" type="submit" name="" value="=" class=" green white-text big" /> </td>
             <td style="padding: 1px"><input style="width: 125px; height:125px" type="button" value="+" onclick="dis('+')" class="box" name="" onkeydown="myFunction(event)" /> </td>
         </tr>
     </table>
