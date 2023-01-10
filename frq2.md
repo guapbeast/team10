@@ -19,6 +19,7 @@
   </table>
 </center>
 <script>
+  const resultContainer = document.getElementById("result");
   const url = "https://music.nighthawkcoders.tk/api/person";
   const options = {
       method: 'GET', // *GET, POST, PUT, DELETE, etc.
@@ -124,8 +125,8 @@
       })
   }
   function createUser() {
-    const urlStart = "https://music.nighthawkcoders.tk/api/person/post";
-    const url = urlStart;
+    const urlStar = "https://music.nighthawkcoders.tk/api/person/post";
+    const url = urlStar;
     console.log(url); 
     const email = document.getElementById("inputEmail").value
     const password = document.getElementById("inputPassword").value
