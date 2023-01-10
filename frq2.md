@@ -3,6 +3,7 @@
 <table>
     <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Email</th>
       <th>Age</th>
@@ -52,6 +53,7 @@
           // tr for each row
             const tr = document.createElement("tr");
             // td for each column
+            const id = document.createElement("td");
             const name = document.createElement("td");
             const email = document.createElement("td");
             const age = document.createElement("td");
@@ -60,6 +62,7 @@
             const height = document.createElement("td");
             const goalstep = document.createElement("td");
             // data is specific to the API
+            id.innerHTML = row.id;
             name.innerHTML = row.name;
             email.innerHTML = row.email;
             age.innerHTML = row.age;
@@ -68,6 +71,7 @@
             height.innerHTML = row.height;
             goalstep.innerHTML = row.population.stepgoal;
             // this build td's into tr
+            tr.appendChild(id);
             tr.appendChild(name);
             tr.appendChild(email);
             tr.appendChild(age);
