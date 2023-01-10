@@ -1,12 +1,11 @@
-<p id="test"></p>
+<br>
 
 <script>
-
 function numberOfLeapYears(year1, year2) {
 
     result = document.getElementById("numberOfLeapYearsResult");
 
-    fetch('https://music.nighthawkcodingsociety.tk/api/calendar/numberOfLeapYears/' + year1 + "/" + year2)
+    fetch('https://music.nighthawkcodingsociety.tk/api/calendar/numberOfLeapYears/' + year1 + "-" + year2)
     .then(response => response.json())
     .then(data => {
 
@@ -33,16 +32,19 @@ function getYear(){
 }
 
 
-function isLeapYear(year) {
-
+function isLeapYear() {
+    let year = document.getElementById("inputYear").value;
     result = document.getElementById("isLeapYearResult");
 
-    fetch('https://music.nighthawkcodingsociety.tk/api/calendar/numberOfLeapYears/' + year)
+    fetch('https://music.nighthawkcodingsociety.tk/api/calendar/isLeapYear/' + year)
     .then(response => response.json())
     .then(data => {
 
         console.log(data);
-
+        document.getElementById(
+          "isLeapYearResult"
+        ).innerHTML = `${data.isLeapYear}`;
+    
         result.innerHTML = "Is " + year + " a leap year: " + data.isLeapYear;
 
     })
@@ -52,11 +54,11 @@ function isLeapYear(year) {
 
 ### Check if Leap Year
 <input id="inputYear" placeholder="Input a Year">
-<button onclick="isLeapYear(getYear())">Submit</button>
+<button onclick="isLeapYear()">Submit</button>
 <p id="isLeapYearResult"></p>
 
 ### Check Number of Leap Years in a Range
-<input id="inputYear1" placeholder="Input Starting Year">
-    <input id="inputYear2" placeholder="Input Ending Year">
+<input id="inputYear1" placeholder="Starting Year">
+    <input id="inputYear2" placeholder="Ending Year">
     <button onclick="numberOfLeapYears(getYear1(), getYear2())">Submit</button>
 <p id="numberOfLeapYearsResult"></p>
