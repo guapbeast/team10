@@ -1,4 +1,4 @@
-<p id="test"></p>
+<br>
 
 <script>
 function numberOfLeapYears(year1, year2) {
