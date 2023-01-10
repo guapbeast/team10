@@ -202,5 +202,5 @@
 <input id="deleteId" placeholder="Id">
 <button onclick="deleteUserById()">Delete user</button>
 
-<input id="deleteEmail" placeholder="Id">
+<input id="deleteEmail" placeholder="Email">
 <button onclick="deleteUserByEmail()">Delete user</button>
