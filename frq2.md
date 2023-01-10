@@ -93,14 +93,14 @@
     tr.appendChild(td);
     resultContainer.appendChild(tr);
   });
-  function getAllUsers() {
-    fetch("https://music.nighthawkcoders.tk/api/person/")
-      .then(data => data.json())
-      .then(data => {
-        console.log(data)
-        return data
-      })
-  }
+  // function getAllUsers() {
+  //   fetch("https://music.nighthawkcoders.tk/api/person/")
+  //     .then(data => data.json())
+  //     .then(data => {
+  //       console.log(data)
+  //       return data
+  //     })
+  // }
   function getUserById(n) {
     const urlStart = "https://music.nighthawkcoders.tk/api/person/";
     const url = urlStart + n;
@@ -153,7 +153,6 @@
       .then(res => res.json())
       .then(data => {
         console.log(data);
-        return data
       })
   }
   function deleteUserById() {
@@ -166,7 +165,10 @@
         headers: {
             'Content-Type': 'application/json'
         }
-    })
+    }).then(res => res.json())
+      .then(data => {
+        console.log(data);
+      })
     location.reload()
   }
   function deleteUserByEmail() {
@@ -179,7 +181,10 @@
         headers: {
             'Content-Type': 'application/json'
         }
-    })
+    }).then(res => res.json())
+      .then(data => {
+        console.log(data);
+      })
     location.reload()
   }
   
