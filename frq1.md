@@ -31,7 +31,7 @@ function getYear(){
 }
 
 
-function isLeapYear(year) {
+function isLeapYear() {
     let year = document.getElementById("inputYear").value;
     result = document.getElementById("isLeapYearResult");
 
