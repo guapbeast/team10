@@ -1,4 +1,4 @@
-## The Reunion Project
+## Team 10 Project!
 
 Usage
 
