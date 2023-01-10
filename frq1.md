@@ -1,9 +1,4 @@
 <br>
-    <input id="year1" type="text" placeholder="Year 1" />
-    <input id="year2" type="text" placeholder="Year 2" />
-    <button type="submit" onclick="numberOfLeapYears()">Submit</button>
-    <p>Number of Leap Years:</p>
-    <p id="bruh"></p>
 
 <script>
 
