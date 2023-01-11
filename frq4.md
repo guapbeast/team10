@@ -25,7 +25,7 @@ function lightboard(row, col) {
     
     result = document.getElementById("lightboard");
 
-    fetch('https://teamsports.nighthawkcoding.ml/api/lights/create/' + row + "/" + col)
+    fetch(`https://music.nighthawkcoders.tk/api/light/create/${row}/${col}`)
         .then(function(response) {
             response.json().then((data) => {
               console.log(data);
