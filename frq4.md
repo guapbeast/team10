@@ -1,3 +1,4 @@
+<br>
 <input type="text" id="row" placeholder="rows">
 <p></p>
 <input type="text" id="column" placeholder="columns">
@@ -30,6 +31,7 @@
         div.style.height = "50px"; 
         div.style.text = tempRed + ',' + tempGreen + ',' + tempBlue;
         div.style.backgroundColor = 'rgb(' + tempRed + ',' + tempGreen + ',' + tempBlue + ')';
+        div.style.display = "inline-block";
         document.getElementById("lightDisplay").appendChild(div); 
 
         if ((i+1)%row == 0) {
