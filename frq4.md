@@ -33,9 +33,9 @@
         div.style.padding = "0rem 0rem";
         document.getElementById("lightDisplay").appendChild(div); 
 
-        // if ((i+1)%row == 0) {
-        //   document.getElementById("lightDisplay").appendChild(p.cloneNode());
-        // }
+        if ((i+1)%row == 0) {
+          document.getElementById("lightDisplay").appendChild(p.cloneNode());
+        }
       }
       
     }) 
@@ -43,4 +43,4 @@
    }
 </script>
 
-<output redInput, greenInput, blueInput></output>
+<!-- <output redInput, greenInput, blueInput></output> -->
