@@ -16,7 +16,7 @@
     var tempGreen;
 
     fetch(`https://music.nighthawkcoders.tk/api/light/${row}/${col}`)
-    .then(res => res.json())
+    .then(data => data.json())
     .then(data => {
       console.log(data);
 
@@ -32,6 +32,7 @@
         div.style.text = tempRed + ',' + tempGreen + ',' + tempBlue;
         div.style.backgroundColor = 'rgb(' + tempRed + ',' + tempGreen + ',' + tempBlue + ')';
         div.style.display = "inline-block";
+        div.style.padding = "5px 5px";
         document.getElementById("lightDisplay").appendChild(div); 
 
         if ((i+1)%row == 0) {
