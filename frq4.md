@@ -28,9 +28,8 @@
         var div = document.createElement("div");
         div.style.width = "50px";
         div.style.height = "50px"; 
+        div.style.text = tempRed + ',' + tempGreen + ',' + tempBlue;
         div.style.backgroundColor = 'rgb(' + tempRed + ',' + tempGreen + ',' + tempBlue + ')';
-        div.style.display = "inline-block";
-        div.style.padding = "0rem 0rem";
         document.getElementById("lightDisplay").appendChild(div); 
 
         if ((i+1)%row == 0) {
