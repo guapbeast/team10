@@ -1,61 +1,46 @@
-<input id="inputRow" placeholder="Input Number of Row">
-<input id="inputCol" placeholder="Input Number of Col">
-<button onclick="lightboard(getRow(), getCol())">Submit</button>
-<table>
-    <thead>
-      <tr>
-        <th>Row</th>
-        <th>Column</th>
-        <th>On</th>
-        <th>Red</th>
-        <th>Green</th>
-        <th>Blue</th>
-        <th>Effect</th>
-      </tr>
-    </thead>
-    <tbody id="lightboard">
-    </tbody>
-  </table>
-
-
+<input type="text" id="row" placeholder="rows">
+<p></p>
+<input type="text" id="column" placeholder="columns">
+<button onclick="displayLights()">Generate</button>
+<div id="lightDisplay"></div>
 
 <script>
+   function displayLights() {
+    document.getElementById("lightDisplay").innerHTML = ""; 
 
-function lightboard(row, col) {
-    
-    result = document.getElementById("lightboard");
+    var row = document.getElementById("row").value;
+    var col = document.getElementById("column").value;
+    var tempRed;
+    var tempBlue;
+    var tempGreen;
 
     fetch(`https://music.nighthawkcoders.tk/api/light/${row}/${col}`)
-        .then(function(response) {
-            response.json().then((data) => {
-              console.log(data);
-              if (data.length > 0) {
-                var temp = "";
-                data.forEach((itemData) => {
-                    temp += "<tr>";
-                    temp += "<td>" + itemData.row + "</td>";
-                    temp += "<td>" + itemData.column + "</td>";
-                    temp += "<td>" + itemData.light.on + "</td>";
-                    temp += "<td>" + itemData.light.red + "</td>";
-                    temp += "<td>" + itemData.light.green + "</td>";
-                    temp += "<td>" + itemData.light.blue + "</td>";
-                    temp += "<td>" + itemData.light.effect + "</td></tr>";
-                });
-                document.getElementById('lightboard').innerHTML = temp;
-                }
-            });
-          })
-}
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
 
+      let p = document.createElement("p");
+      for (let i = 0; i < row * col; i++) {
+        tempRed = data[i].light.red;
+        tempGreen = data[i].light.green; 
+        tempBlue = data[i].light.blue;
+        
+        var div = document.createElement("div");
+        div.style.width = "50px";
+        div.style.height = "50px"; 
+        div.style.backgroundColor = 'rgb(' + tempRed + ',' + tempGreen + ',' + tempBlue + ')';
+        div.style.display = "inline-block";
+        div.style.padding = "0rem 0rem";
+        document.getElementById("lightDisplay").appendChild(div); 
 
+        // if ((i+1)%row == 0) {
+        //   document.getElementById("lightDisplay").appendChild(p.cloneNode());
+        // }
+      }
+      
+    }) 
 
-function getRow(){
-    let inputRow = document.getElementById("inputRow").value;
-    return inputRow;
-}
-
-function getCol(){
-    let inputCol = document.getElementById("inputCol").value;
-    return inputCol;
-}
+   }
 </script>
+
+<output redInput, greenInput, blueInput></output>
