@@ -155,7 +155,7 @@
     const final = url +'email=' + email + '&password=' + password + '&name=' + name + '&dob=' + dob + '&height=' + height + '&weight=' + weight;
     console.log(final)
     console.log(options)
-    location.reload()
+    // location.reload()
   }
   function deleteUserById() {
     const id = document.getElementById("deleteId").value
@@ -172,7 +172,7 @@
       // .then(res => {console.log(res); console.log(res.json); res.json().then(data => {
       //   console.log(data);
       // })})
-    location.reload()
+    // location.reload()
   }
   function deleteUserByEmail() {
     const email = document.getElementById("deleteEmail").value
@@ -189,7 +189,7 @@
     //   .then(res => {console.log(res); console.log(res.json); res.json().then(data => {
     //     console.log(data);
     //   })})
-    location.reload()
+    // location.reload()
   }
   
 </script>
