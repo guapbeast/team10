@@ -155,6 +155,7 @@
     const final = url +'email=' + email + '&password=' + password + '&name=' + name + '&dob=' + dob + '&height=' + height + '&weight=' + weight;
     console.log(final)
     console.log(options)
+    fetch(final, options)
     // location.reload()
   }
   function deleteUserById() {
