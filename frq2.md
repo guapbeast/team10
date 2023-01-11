@@ -156,7 +156,7 @@
     console.log(final)
     console.log(options)
     fetch(final, options)
-    // location.reload()
+    location.reload()
   }
   function deleteUserById() {
     const id = document.getElementById("deleteId").value
