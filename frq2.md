@@ -152,12 +152,13 @@
         //     weight: weight
         // })
     };
+    const final = url +'email=' + email + '&password=' + password + '&name=' + name + '&dob=' + dob + '&height=' + height + '&weight=' + weight;
+    console.log(final)
     console.log(options)
-    fetch(url +'email=' + email + '&password=' + password + '&name=' + name + '&dob=' + dob + '&height=' + height + '&weight=' + weight, options)
-      .then(res => {console.log(res); console.log(res.json); res.json()})
-      .then(data => {
+    fetch(final, options)
+      .then(res => {console.log(res); console.log(res.json); res.json().then(data => {
         console.log(data);
-      })
+      })})
   }
   function deleteUserById() {
     const id = document.getElementById("deleteId").value
