@@ -19,7 +19,7 @@
     .then(data => {
       console.log(data);
 
-      let p = document.createElement("p");
+      // let p = document.createElement("p");
       for (let i = 0; i < row * col; i++) {
         tempRed = data[i].light.red;
         tempGreen = data[i].light.green; 
@@ -42,5 +42,3 @@
 
    }
 </script>
-
-<!-- <output redInput, greenInput, blueInput></output> -->
