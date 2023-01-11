@@ -135,7 +135,7 @@
     const dob = document.getElementById("inputDob").value
     const height = document.getElementById("inputHeight").value
     const weight = document.getElementById("inputWeight").value
-    fetch(url, {
+    options = {
         method: 'POST',
         mode: 'no-cors', // no-cors, *cors, same-origin
         cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
@@ -151,8 +151,10 @@
             height: height,
             weight: weight
         })
-    })
-      .then(res => res.json())
+    };
+    console.log(options)
+    fetch(url, options)
+      .then(res => {console.log(res); console.log(res.json); res.json()})
       .then(data => {
         console.log(data);
       })
