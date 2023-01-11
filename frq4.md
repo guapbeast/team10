@@ -28,12 +28,12 @@
         tempBlue = data[i].light.blue;
         
         var div = document.createElement("div");
-        div.style.width = "300px";
-        div.style.height = "300px"; 
+        div.style.width = "200px";
+        div.style.height = "200px"; 
         div.innerHTML += tempRed + ',' + tempGreen + ',' + tempBlue;
         div.style.backgroundColor = 'rgb(' + tempRed + ',' + tempGreen + ',' + tempBlue + ')';
-        div.style.display = "inline-block";
         div.style.padding = "5px 5px";
+        div.style.display = "inline-block";
         document.getElementById("lightDisplay").appendChild(div); 
 
         if ((i+1)%row == 0) {
