@@ -2,6 +2,7 @@
 <input type="text" id="row" placeholder="rows">
 <p></p>
 <input type="text" id="column" placeholder="columns">
+<br>
 <button onclick="displayLights()">Generate</button>
 <div id="lightDisplay"></div>
 
