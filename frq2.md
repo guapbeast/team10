@@ -1,251 +1,211 @@
-
-
-<div style="margin: 0 auto; text-align: center">
-  <h5 style="text-align: center; font-size: 30px">
-    Create New User
-  </h5>
-  <form method="POST" id="newUserForm">
-    <p>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="email"
-        class="text"
-      />
-    </p>
-    <p>
-      <input 
-        type="password" 
-        name="password" 
-        id="password" 
-        placeholder="password"
-        class="text"
-      />
-    </p>
-    <p>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="name"
-      />
-    </p>
-    <p>
-      <input
-        type="text"
-        name="dob"
-        id="dob"
-        placeholder="dob"
-      />
-    <p>
-      <input
-        type="text"
-        name="height"
-        id="height"
-        placeholder="height"
-      />
-    </p>
-    <p>
-      <input 
-        type="text" 
-        name="weight" 
-        id="weight" 
-        placeholder="weight"
-      />
-    </p>
-    <input value="Submit" type="submit" class="button"/>
-  <form>
-
-  <p></p>
-  <table id = "users">
+<h3>Users and Info</h3>
+<center>
+<table>
     <thead>
-      <tr>
-        <th>id</th>
-        <th>email</th>
-        <th>password</th>
-        <th>name</th>
-        <th>height</th>
-        <th>weight</th>
-        <th>goalstep</th>
-      </tr>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Date of Birth</th>
+      <th>Weight</th>
+      <th>Height</th>
+      <th>Goal Step</th>
+    </tr>
     </thead>
-    <tbody></tbody>
+    <tbody id="result">
+      <!-- javascript generated data -->
+    </tbody>
   </table>
-
-  <h5 style="text-align: center; font-size: 30px">
-    Create New Log
-  </h5>
-  <form method="POST" id="newStepLogForm">
-    <p>
-      <input
-        type="text"
-        name="id"
-        id="id"
-        placeholder="id"
-      />
-    <p>
-      <input
-        type="text"
-        name="date"
-        id="date"
-        placeholder="date"
-      />
-    <p>
-      <input
-        type="text"
-        name="steps"
-        id="steps"
-        placeholder="steps"
-      />
-    <p>
-      <input
-        type="text"
-        name="calories"
-        id="calories"
-        placeholder="calories"
-      />
-    </p>
-    <input value="Submit" type="submit" class="button"/>
-  <form>
-
-  <h5 style="text-align: center; font-size: 30px">
-    Get Stats
-  </h5>
-  <form method="POST" id="getStepLogForm">
-      <input
-        type="text"
-        name="id"
-        id="idInput"
-        placeholder="id"
-      />
-    <input value="Submit" type="submit" class="button"/>
-  <form>
-
-  <p></p>
-  <table id = "stepLogReport">
-    <thead>
-      <tr>
-        <th>id</th>
-        <th>goalstep</th>
-        <th>totalSteps</th>
-        <th>daysRecorded</th>
-        <th>activeDays</th>
-        <th>caloriesConsumed</th>
-        <th>caloriesBurnt</th>
-        <th>netCalories</th>
-        <th>netWeightReport</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-
-  <p></p>
-  <table id = "stepLogStats">
-    <thead>
-      <tr>
-        <th>id</th>
-        <th>date</th>
-        <th>steps</th>
-        <th>calories</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-<div>
-
+</center>
 <script>
-      function submitform(event) {
-        event.preventDefault();
-
-        const data = new FormData(event.target);
-
-        const queryString = new URLSearchParams(data).toString();
-        
-        fetch("https://music.nighthawkcoders.tk/api/person/post/?" + queryString, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          }
-        })
-        
-        const form = document.getElementById("newUserForm");
-        form.reset();
-      }
-
-      const form = document.getElementById("newUserForm");
-      form.addEventListener("submit", submitform);
-
-  const userContainer = document.getElementById("users");
-  const stepTrackerContainer = document.getElementById("steptracker");
-
+  const resultContainer = document.getElementById("result");
   const url = "https://music.nighthawkcoders.tk/api/person/";
-
-  const options = {
-      method: 'GET',
-      headers: {
-      'Content-Type': 'application/json'
-      },
-  };
-
-  const putOptions = {
-      method: 'PUT', 
-      headers: {
-      'Content-Type': 'application/json'
-      },
-  };
-
-  function getStats() {
-    fetch(url, options)
-      .then(response => {
-        if (response.status !== 200) {
-            const errorMsg = 'Database response error: ' + response.status;
-            console.log(errorMsg);
+  // const options = {
+  //     method: 'GET', // *GET, POST, PUT, DELETE, etc.
+  //     mode: 'no-cors', // no-cors, *cors, same-origin
+  //     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+  //     credentials: 'same-origin', // include, same-origin, omit
+  //     headers: {
+  //         'Content-Type': 'application/json'
+  //         // 'Content-Type': 'application/x-www-form-urlencoded',
+  //     },
+  //     };
+  fetch("https://music.nighthawkcoders.tk/api/person/")
+  // response is a RESTful "promise" on any successful fetch
+  .then(response => {
+    console.log(response)
+    // check for response errors
+    if (response.status !== 200) {
+        const errorMsg = 'API response error: ' + response.status;
+        console.log(errorMsg);
+        const tr = document.createElement("tr");
+        const td = document.createElement("td");
+        td.innerHTML = errorMsg;
+        tr.appendChild(td);
+        resultContainer.appendChild(tr);
+        return;
+    }
+    // valid response will have json data
+    response.json().then(data => {
+        console.log(data);
+        // Country data
+        for (const row of data) {
+          console.log(row)
+          // tr for each row
             const tr = document.createElement("tr");
-            const td = document.createElement("td");
-            td.innerHTML = errorMsg;
-            tr.appendChild(td);
-            userContainer.appendChild(tr);
-            return;
-        }
-        response.json().then(data => {
-            for (const row of data) {
-
-              const tr = document.createElement("tr");
-
-              const id = document.createElement("td");
-              const email = document.createElement("td");
-              const password = document.createElement("td");
-              const name = document.createElement("td");
-              const height = document.createElement("td");
-              const weight = document.createElement("td");
-              const gender = document.createElement("td");
-              const age = document.createElement("td");
-              const goalstep = document.createElement("td");
-
-              id.innerHTML = row.id;
-              email.innerHTML = row.email;
-              password.innerHTML = row.password;
-              name.innerHTML = row.name;
-              height.innerHTML = row.height;
-              weight.innerHTML = row.weight;
-              goalstep.innerHTML = row.goalstep;
-
-              tr.appendChild(id);
-              tr.appendChild(email);
-              tr.appendChild(password);
-              tr.appendChild(name)
-              tr.appendChild(height);
-              tr.appendChild(weight);
-              tr.appendChild(gender);
-              tr.appendChild(age);
-              tr.appendChild(goalstep);
-
-              userContainer.appendChild(tr);
-            }
-        })
+            // td for each column
+            const id = document.createElement("td");
+            const name = document.createElement("td");
+            const email = document.createElement("td");
+            const age = document.createElement("td");
+            const dob = document.createElement("td");
+            const weight = document.createElement("td");
+            const height = document.createElement("td");
+            const goalstep = document.createElement("td");
+            // data is specific to the API
+            id.innerHTML = row.id;
+            name.innerHTML = row.name;
+            email.innerHTML = row.email;
+            age.innerHTML = row.age;
+            dob.innerHTML = row.dob.substring(0,10); 
+            weight.innerHTML = row.weight; 
+            height.innerHTML = row.height;
+            goalstep.innerHTML = row.goalStep;
+            // this build td's into tr
+            tr.appendChild(id);
+            tr.appendChild(name);
+            tr.appendChild(email);
+            tr.appendChild(age);
+            tr.appendChild(dob);
+            tr.appendChild(weight);
+            tr.appendChild(height);
+            tr.appendChild(goalstep);
+            // add HTML to container
+            resultContainer.appendChild(tr);
+      }
     })
+  })
+  // catch fetch errors (ie ACCESS to server blocked)
+  .catch(err => {
+    console.error(err);
+    const tr = document.createElement("tr");
+    const td = document.createElement("td");
+    td.innerHTML = err;
+    tr.appendChild(td);
+    resultContainer.appendChild(tr);
+  });
+  // function getAllUsers() {
+  //   fetch("https://music.nighthawkcoders.tk/api/person/")
+  //     .then(data => data.json())
+  //     .then(data => {
+  //       console.log(data)
+  //       return data
+  //     })
+  // }
+  function getUserById(n) {
+    const urlStart = "https://music.nighthawkcoders.tk/api/person/";
+    const url = urlStart + n;
+    console.log(url); 
+    fetch(url)
+      .then(res => {res.json()
+      .then(data => {
+        console.log(data);
+        document.getElementById("userInfoName").innerHTML = 
+        "name: " + data.name;
+        document.getElementById("userInfoEmail").innerHTML = 
+        "email: " + data.email;
+        document.getElementById("userInfoPassword").innerHTML = 
+        "password: " + data.password;
+        document.getElementById("userInfoDob").innerHTML = 
+        "dob: " + data.dob;
+        document.getElementById("userInfoHeight").innerHTML = 
+        "height: " + data.height;
+         document.getElementById("userInfoWeight").innerHTML = 
+        "weight: " + data.weight;
+      })})
   }
-
-  getStats();
+  function createUser() {
+    const urlStar = "https://music.nighthawkcoders.tk/api/person/post?";
+    const url = urlStar;
+    console.log(url); 
+    const email = document.getElementById("inputEmail").value
+    const password = document.getElementById("inputPassword").value
+    const name = document.getElementById("inputName").value
+    const dob = document.getElementById("inputDob").value
+    const height = document.getElementById("inputHeight").value
+    const weight = document.getElementById("inputWeight").value
+    options = {
+        method: 'POST',
+        mode: 'no-cors', // no-cors, *cors, same-origin
+        // cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+        // credentials: 'same-origin', // include, same-origin, omit
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        // body: JSON.stringify ({
+        //     email: email,
+        //     password:  password,
+        //     name: name,
+        //     dob: dob,
+        //     height: height,
+        //     weight: weight
+        // })
+    };
+    const final = url +'email=' + email + '&password=' + password + '&name=' + name + '&dob=' + dob + '&height=' + height + '&weight=' + weight;
+    console.log(final)
+    console.log(options)
+    fetch(final, options)
+    location.reload()
+  }
+  function deleteUserById() {
+    const id = document.getElementById("deleteId").value
+    fetch("https://music.nighthawkcoders.tk/api/person/delete/" + id, {
+        method: 'DELETE',
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, same-origin, omit
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    // .then(res => res.json())
+      // .then(res => {console.log(res); console.log(res.json); res.json().then(data => {
+      //   console.log(data);
+      // })})
+    // location.reload()
+  }
+  function deleteUserByEmail() {
+    const email = document.getElementById("deleteEmail").value
+    fetch("https://music.nighthawkcoders.tk/api/person/del/" + email, {
+        method: 'DELETE',
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, same-origin, omit
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    // .then(res => res.json())
+    //   .then(res => {console.log(res); console.log(res.json); res.json().then(data => {
+    //     console.log(data);
+    //   })})
+    // location.reload()
+  }
+  
 </script>
+
+<input id="inputEmail" placeholder="Email">
+<input id="inputPassword" placeholder="Password">
+<input id="inputName" placeholder="Name">
+<input id="inputDob" placeholder="Date of Birth">
+<input id="inputHeight" placeholder="Height">
+<input id="inputWeight" placeholder="Weight">
+<button onclick="createUser()">Create user</button>
+
+
+<input id="deleteId" placeholder="Id">
+<button onclick="deleteUserById()">Delete user</button>
+
+<input id="deleteEmail" placeholder="Email">
+<button onclick="deleteUserByEmail()">Delete user</button>
