@@ -21,7 +21,7 @@
     .then(data => {
       console.log(data);
 
-      let p = document.createElement("p");
+      var p = document.createElement("p");
       for (let i = 0; i < row * col; i++) {
         tempRed = data[i].light.red;
         tempGreen = data[i].light.green; 
