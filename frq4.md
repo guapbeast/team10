@@ -1,7 +1,7 @@
-<input id="inputRow" placeholder="# Rows">
-<input id="inputCol" placeholder="# Columns">
-<button onclick="lights(getRow(), getCol())">Submit</button>
-<!-- <table>
+<input id="inputRow" placeholder="Input Number of Row">
+<input id="inputCol" placeholder="Input Number of Col">
+<button onclick="lightboard(getRow(), getCol())">Submit</button>
+<table>
     <thead>
       <tr>
         <th>Row</th>
@@ -13,18 +13,21 @@
         <th>Effect</th>
       </tr>
     </thead>
-    <tbody id="lights">
+    <tbody id="lightboard">
     </tbody>
-  </table> -->
+  </table>
+
+
 
 <script>
-function lights(row, col) {
-    result = document.getElementById("lights");
 
-    fetch(`https://music.nighthawkcoders.tk/api/lights/create/{row}/{col}`)
+function lightboard(row, col) {
+    
+    result = document.getElementById("lightboard");
+
+    fetch('https://teamsports.nighthawkcoding.ml/api/lights/create/' + row + "/" + col)
         .then(function(response) {
-            response.json()
-            .then((data) => {
+            response.json().then((data) => {
               console.log(data);
               if (data.length > 0) {
                 var temp = "";
@@ -38,11 +41,13 @@ function lights(row, col) {
                     temp += "<td>" + itemData.light.blue + "</td>";
                     temp += "<td>" + itemData.light.effect + "</td></tr>";
                 });
-                document.getElementById('lights').innerHTML = temp;
+                document.getElementById('lightboard').innerHTML = temp;
                 }
             });
           })
 }
+
+
 
 function getRow(){
     let inputRow = document.getElementById("inputRow").value;
