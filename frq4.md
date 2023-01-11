@@ -34,7 +34,7 @@
         div.style.textAlign = "center";
         div.innerHTML += tempRed + ',' + tempGreen + ',' + tempBlue;
         div.style.backgroundColor = 'rgb(' + tempRed + ',' + tempGreen + ',' + tempBlue + ')';
-        div.style.padding = "5px 5px";
+        div.style.padding = "0px 0px";
         div.style.display = "inline-block";
         document.getElementById("lightDisplay").appendChild(div); 
 
