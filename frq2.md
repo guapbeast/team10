@@ -31,9 +31,10 @@
   //         // 'Content-Type': 'application/x-www-form-urlencoded',
   //     },
   //     };
-  fetch(url, {mode: 'no-cors'})
+  fetch("https://music.nighthawkcoders.tk/api/person/")
   // response is a RESTful "promise" on any successful fetch
   .then(response => {
+    console.log(response)
     // check for response errors
     if (response.status !== 200) {
         const errorMsg = 'API response error: ' + response.status;
