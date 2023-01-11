@@ -20,7 +20,7 @@
 </center>
 <script>
   const resultContainer = document.getElementById("result");
-  const url = "https://music.nighthawkcoders.tk/api/person";
+  const url = "https://music.nighthawkcoders.tk/api/person/";
   const options = {
       method: 'GET', // *GET, POST, PUT, DELETE, etc.
       mode: 'no-cors', // no-cors, *cors, same-origin
