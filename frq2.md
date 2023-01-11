@@ -68,7 +68,7 @@
             name.innerHTML = row.name;
             email.innerHTML = row.email;
             age.innerHTML = row.age;
-            dob.innerHTML = row.dob; 
+            dob.innerHTML = row.dob.substring(0,10); 
             weight.innerHTML = row.weight; 
             height.innerHTML = row.height;
             goalstep.innerHTML = row.goalStep;
