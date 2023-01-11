@@ -21,17 +21,17 @@
 <script>
   const resultContainer = document.getElementById("result");
   const url = "https://music.nighthawkcoders.tk/api/person/";
-  const options = {
-      method: 'GET', // *GET, POST, PUT, DELETE, etc.
-      mode: 'no-cors', // no-cors, *cors, same-origin
-      cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'same-origin', // include, same-origin, omit
-      headers: {
-          'Content-Type': 'application/json'
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      };
-  fetch(url, options)
+  // const options = {
+  //     method: 'GET', // *GET, POST, PUT, DELETE, etc.
+  //     mode: 'no-cors', // no-cors, *cors, same-origin
+  //     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+  //     credentials: 'same-origin', // include, same-origin, omit
+  //     headers: {
+  //         'Content-Type': 'application/json'
+  //         // 'Content-Type': 'application/x-www-form-urlencoded',
+  //     },
+  //     };
+  fetch(url, {cors: 'no-cors'})
   // response is a RESTful "promise" on any successful fetch
   .then(response => {
     // check for response errors
