@@ -21,6 +21,7 @@ function newTable() {
   let numCols = document.getElementById("numCols").value;
   let numRows = document.getElementById("numRows").value;
 
+
   fetch(`https://music.nighthawkcoders.tk/api/lightboard/${numRows}/${numCols}`)
     .then(data => data.json())
     .then(data => {
