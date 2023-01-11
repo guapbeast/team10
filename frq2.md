@@ -202,8 +202,8 @@
 <input id="inputHeight" placeholder="Height">
 <input id="inputWeight" placeholder="Weight">
 <button onclick="createUser()">Create user</button>
-
-
+<br><br><br><br><br><br><br><br><br><br>
+<p>unfortunately DELETE does not work due to server settings and fetch can't change origin header D:</p>
 <input id="deleteId" placeholder="Id">
 <button onclick="deleteUserById()">Delete user</button>
 
