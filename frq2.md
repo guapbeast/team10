@@ -162,7 +162,7 @@
     const id = document.getElementById("deleteId").value
     fetch("https://music.nighthawkcoders.tk/api/person/delete/" + id, {
         method: 'DELETE',
-        mode: 'same-origin', // no-cors, *cors, same-origin
+        mode: 'cors', // no-cors, *cors, same-origin
         // cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
         // credentials: 'same-origin', // include, same-origin, omit
         headers: {
@@ -179,7 +179,7 @@
     const email = document.getElementById("deleteEmail").value
     fetch("https://music.nighthawkcoders.tk/api/person/del/" + email, {
         method: 'DELETE',
-        mode: 'same-origin', // no-cors, *cors, same-origin
+        mode: 'cors', // no-cors, *cors, same-origin
         // cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
         // credentials: 'same-origin', // include, same-origin, omit
         headers: {
@@ -203,9 +203,9 @@
 <input id="inputWeight" placeholder="Weight">
 <button onclick="createUser()">Create user</button>
 <br><br><br><br><br><br><br><br><br><br>
-<p>unfortunately DELETE does not work due to server settings and fetch can't change origin header D:</p>
-<input id="deleteId" placeholder="Id">
-<button onclick="deleteUserById()">Delete user</button>
+<p hidden></p>
+<input id="deleteId" placeholder="Id" hidden>
+<button onclick="deleteUserById()" hidden>Delete user</button>
 
-<input id="deleteEmail" placeholder="Email">
-<button onclick="deleteUserByEmail()">Delete user</button>
+<input id="deleteEmail" placeholder="Email" hidden>
+<button onclick="deleteUserByEmail()" hidden>Delete user</button>
