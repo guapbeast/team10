@@ -108,7 +108,7 @@
     const url = urlStart + n;
     console.log(url); 
     fetch(url)
-      .then(res => res.json())
+      .then(res => {res.json()
       .then(data => {
         console.log(data);
         document.getElementById("userInfoName").innerHTML = 
@@ -123,7 +123,7 @@
         "height: " + data.height;
          document.getElementById("userInfoWeight").innerHTML = 
         "weight: " + data.weight;
-      })
+      })})
   }
   function createUser() {
     const urlStar = "https://music.nighthawkcoders.tk/api/person/post?";
@@ -155,10 +155,7 @@
     const final = url +'email=' + email + '&password=' + password + '&name=' + name + '&dob=' + dob + '&height=' + height + '&weight=' + weight;
     console.log(final)
     console.log(options)
-    fetch(final, options)
-      .then(res => {console.log(res); console.log(res.json); res.json().then(data => {
-        console.log(data);
-      })})
+    location.reload()
   }
   function deleteUserById() {
     const id = document.getElementById("deleteId").value
@@ -170,10 +167,11 @@
         headers: {
             'Content-Type': 'application/json'
         }
-    }).then(res => res.json())
-      .then(data => {
-        console.log(data);
-      })
+    })
+    // .then(res => res.json())
+      // .then(res => {console.log(res); console.log(res.json); res.json().then(data => {
+      //   console.log(data);
+      // })})
     location.reload()
   }
   function deleteUserByEmail() {
@@ -186,10 +184,11 @@
         headers: {
             'Content-Type': 'application/json'
         }
-    }).then(res => res.json())
-      .then(data => {
-        console.log(data);
-      })
+    })
+    // .then(res => res.json())
+    //   .then(res => {console.log(res); console.log(res.json); res.json().then(data => {
+    //     console.log(data);
+    //   })})
     location.reload()
   }
   
