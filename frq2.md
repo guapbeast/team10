@@ -31,7 +31,7 @@
   //         // 'Content-Type': 'application/x-www-form-urlencoded',
   //     },
   //     };
-  fetch(url, {cors: 'no-cors'})
+  fetch(url, {mode: 'no-cors'})
   // response is a RESTful "promise" on any successful fetch
   .then(response => {
     // check for response errors
