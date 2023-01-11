@@ -31,6 +31,7 @@
         div.style.width = "50px";
         div.style.height = "50px"; 
         div.style.color = "#000000";
+        div.style.textAlign = "center";
         div.innerHTML += tempRed + ',' + tempGreen + ',' + tempBlue;
         div.style.backgroundColor = 'rgb(' + tempRed + ',' + tempGreen + ',' + tempBlue + ')';
         div.style.padding = "5px 5px";
