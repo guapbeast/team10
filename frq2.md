@@ -126,7 +126,7 @@
       })
   }
   function createUser() {
-    const urlStar = "https://music.nighthawkcoders.tk/api/person/post";
+    const urlStar = "https://music.nighthawkcoders.tk/api/person/post?";
     const url = urlStar;
     console.log(url); 
     const email = document.getElementById("inputEmail").value
@@ -137,23 +137,23 @@
     const weight = document.getElementById("inputWeight").value
     options = {
         method: 'POST',
-        mode: 'no-cors', // no-cors, *cors, same-origin
-        cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'same-origin', // include, same-origin, omit
+        // mode: 'no-cors', // no-cors, *cors, same-origin
+        // cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+        // credentials: 'same-origin', // include, same-origin, omit
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify ({
-            email: email,
-            password:  password,
-            name: name,
-            dob: dob,
-            height: height,
-            weight: weight
-        })
+        // body: JSON.stringify ({
+        //     email: email,
+        //     password:  password,
+        //     name: name,
+        //     dob: dob,
+        //     height: height,
+        //     weight: weight
+        // })
     };
     console.log(options)
-    fetch(url, options)
+    fetch(url +'email=' + email + '&password=' + password + '&name=' + name + '&dob=' + dob + '&height=' + height + '&weight=' + weight, options)
       .then(res => {console.log(res); console.log(res.json); res.json()})
       .then(data => {
         console.log(data);
