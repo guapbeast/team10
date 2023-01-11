@@ -162,7 +162,7 @@
     const id = document.getElementById("deleteId").value
     fetch("https://music.nighthawkcoders.tk/api/person/delete/" + id, {
         method: 'DELETE',
-        mode: 'no-cors', // no-cors, *cors, same-origin
+        mode: 'same-origin', // no-cors, *cors, same-origin
         // cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
         // credentials: 'same-origin', // include, same-origin, omit
         headers: {
@@ -179,7 +179,7 @@
     const email = document.getElementById("deleteEmail").value
     fetch("https://music.nighthawkcoders.tk/api/person/del/" + email, {
         method: 'DELETE',
-        mode: 'no-cors', // no-cors, *cors, same-origin
+        mode: 'same-origin', // no-cors, *cors, same-origin
         // cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
         // credentials: 'same-origin', // include, same-origin, omit
         headers: {
