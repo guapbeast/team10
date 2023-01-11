@@ -71,7 +71,7 @@
             dob.innerHTML = row.dateOfBirth; 
             weight.innerHTML = row.weight; 
             height.innerHTML = row.height;
-            goalstep.innerHTML = row.population.stepgoal;
+            goalstep.innerHTML = row.population.goalStep;
             // this build td's into tr
             tr.appendChild(id);
             tr.appendChild(name);
