@@ -1,7 +1,7 @@
 <input id="inputRow" placeholder="# Rows">
 <input id="inputCol" placeholder="# Columns">
 <button onclick="lights(getRow(), getCol())">Submit</button>
-<!-- <table>
+<table>
     <thead>
       <tr>
         <th>Row</th>
@@ -15,7 +15,7 @@
     </thead>
     <tbody id="lights">
     </tbody>
-  </table> -->
+  </table>
 
 <script>
 function lights(row, col) {
