@@ -25,4 +25,6 @@
     <img src="/images/delnorte-aerial.jpeg" alt="school" style="width:100%">
   </div>
 
-  
+  <div class="column">
+    <img src="/images/delnorte.jpeg" alt="1999" style="width:100%">
+  </div>
