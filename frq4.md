@@ -28,8 +28,9 @@
         tempBlue = data[i].light.blue;
         
         var div = document.createElement("div");
-        div.style.width = "200px";
-        div.style.height = "200px"; 
+        div.style.width = "50px";
+        div.style.height = "50px"; 
+        div.style.color = "#000000";
         div.innerHTML += tempRed + ',' + tempGreen + ',' + tempBlue;
         div.style.backgroundColor = 'rgb(' + tempRed + ',' + tempGreen + ',' + tempBlue + ')';
         div.style.padding = "5px 5px";
