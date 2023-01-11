@@ -28,8 +28,8 @@
         tempBlue = data[i].light.blue;
         
         var div = document.createElement("div");
-        div.style.width = "90px";
-        div.style.height = "90px"; 
+        div.style.width = "100px";
+        div.style.height = "100px"; 
         div.style.color = "#000000";
         div.style.textAlign = "center";
         div.innerHTML += tempRed + ',' + tempGreen + ',' + tempBlue;
