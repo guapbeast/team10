@@ -27,7 +27,7 @@
         tempGreen = data[i].light.green; 
         tempBlue = data[i].light.blue;
         
-        var div = document.createElement("div");
+        let div = document.createElement("div");
         div.style.width = "100px";
         div.style.height = "100px"; 
         div.style.color = "#000000";
