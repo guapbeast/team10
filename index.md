@@ -26,3 +26,11 @@
   </div>
 
   
+  <div class="col-md-4 float-left animate-out mb-4">
+        <h3 class="alt-h3 mb-3">Open Government</h3>
+        <p><a href="https://github.com/showcases/policies" target="_blank">
+          <img src="assets/img/open-gov.png" class="img-border" alt="Project Open Data"/></a>
+        </p>
+        <small>Find the US government’s open source projects at <a href="https://code.gov/">Code.gov</a></small>
+      </div>
+    </div>
