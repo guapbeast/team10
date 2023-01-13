@@ -1,4 +1,4 @@
-
+{% include frq.html %}
 <br>
 
 <script>
