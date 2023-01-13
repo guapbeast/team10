@@ -1,3 +1,4 @@
+{% include frq.html %}
 <br>
 <input type="text" id="row" placeholder="rows">
 <p></p>
