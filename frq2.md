@@ -1,3 +1,4 @@
+{% include frq.html %}
 <h3>Users and Info</h3>
 <center>
 <table>
