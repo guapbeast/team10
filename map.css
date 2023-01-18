@@ -27,10 +27,9 @@
     background: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    left: 0;
-    position: absolute;
-    top: 0;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
     width: 440px;
     z-index: 1;
   }
