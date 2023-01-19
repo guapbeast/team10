@@ -6,6 +6,9 @@
 To ease the process of planning for your next vacation
 
 ### Agile Mantra
+- Reflect and review plans to accomodate changes
+- Collaborate to improve team learning and skills
+- Work with customer satisfaction in mind
 
 ### About the Creators
 
