@@ -27,6 +27,9 @@ Finding hotels by location in a map search
 
 ![image](https://user-images.githubusercontent.com/87632049/213376031-5a649cb4-6607-40f3-b1dc-efca48842630.png)
 
+![image](https://user-images.githubusercontent.com/87632049/213381073-e424f3d8-6782-45a1-9001-17eeede5585a.png)
+
+
 Itineraries made with categories (what to pack, travel, food, hotel, activities, important notes) - add "none" option to all of these
 
 **Wireframes go here
