@@ -23,9 +23,6 @@ Split into 4 categories
 
 ![image](https://user-images.githubusercontent.com/87632049/213338186-876cabbe-9d56-4a0d-b05a-ddea4eb287fd.png)
 
-**Wireframes go here
-**
-
 Each guide is written in blog format, kind of like fastpages 
 
 We list out things like popular activites, activities based on location (beach, city, rural, etc), activities that we personally recommend
