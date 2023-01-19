@@ -1,9 +1,13 @@
 # Team 10 
 
 ### Project Idea
+- An all-in-one travel planning website 
+- Compiles popular destinations/attractions and hotels for easy browsing
+- Save locations in itinerary and organize a timeline
+- Track costs for lodging, activities, transportation, and food
 
 ### Purpose
-To ease the process of planning for your next vacation
+- To ease the process of planning your next vacation
 
 ### Agile Mantra
 - Reflect and review plans to accomodate changes
