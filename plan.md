@@ -44,5 +44,7 @@ Itineraries made with categories - what to pack, travel, food, hotel, activities
 
 ### Budgeting
 
+![Compsci WireFrame Budgeting](https://user-images.githubusercontent.com/86858869/213388315-8b621157-3e3a-4d4f-b4a4-377f07aae13b.jpg)
+
 
 ![Compsci WireFrame Budgeting (1)](https://user-images.githubusercontent.com/86858869/213388266-cb844365-3d50-43a4-b266-2078a7eb19a8.jpg)
