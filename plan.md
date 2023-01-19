@@ -17,12 +17,16 @@
 | Placeholder | Backend Developer | [Placeholder](placeholder) | [Placeholder](Placeholder) |
 
 
-### Map page
+### Map 
 Finding hotels by location in a map search
 
 ![image](https://user-images.githubusercontent.com/87632049/213259966-f6930bc8-300f-4c13-a8bb-38b56075df26.png)
 
 
+### Itinerary 
+ 
+**Wireframes go here
+**
 ### Guides
 Guides to everything you might want out of a vacation
 
@@ -30,6 +34,11 @@ Split into 4 categories
 
 ![image](https://user-images.githubusercontent.com/87632049/213338186-876cabbe-9d56-4a0d-b05a-ddea4eb287fd.png)
 
+**Wireframes go here
+**
+
 
 ### Budgeting
 
+**Wireframes go here
+**
