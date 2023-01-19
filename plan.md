@@ -16,6 +16,17 @@
 | Aidan Wu | Backend Developer | [Aidan's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | [Aidan's Github Profile](https://github.com/aidanywu) |
 | Vaishavi Jayashankar | Backend Developer | [Vaishavi's Commits]() | [Vaishavi's Github Profile]() |
 
+### Guides
+Guides to everything you might want out of a vacation
+
+Split into 4 categories
+
+![image](https://user-images.githubusercontent.com/87632049/213338186-876cabbe-9d56-4a0d-b05a-ddea4eb287fd.png)
+
+**Wireframes go here
+**
+
+For wireframe of guides - popular activities, activities based on whether they are near things like the beach or the city, activities that we personally recommend=
 
 ### Map 
 Finding hotels by location in a map search
@@ -30,18 +41,6 @@ For planning out your next vacation
 Itineraries made with categories - what to pack, travel, food, hotel, activities, important notes, etc
 
 ![image](https://user-images.githubusercontent.com/87632049/213381073-e424f3d8-6782-45a1-9001-17eeede5585a.png)
-
-### Guides
-Guides to everything you might want out of a vacation
-
-Split into 4 categories
-
-![image](https://user-images.githubusercontent.com/87632049/213338186-876cabbe-9d56-4a0d-b05a-ddea4eb287fd.png)
-
-**Wireframes go here
-**
-
-For wireframe of guides - popular activities, activities based on whether they are near things like the beach or the city, activities that we personally recommend
 
 ### Budgeting
 
