@@ -1,9 +1,11 @@
 # Team 10 
 
-### Agile Mantra
+### Project Idea
 
 ### Purpose
 To ease the process of planning for your next vacation
+
+### Agile Mantra
 
 ### About the Creators
 
