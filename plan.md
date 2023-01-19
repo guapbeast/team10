@@ -10,11 +10,11 @@
 ### About the Creators
 | Name | Role | Commits | Profile |
 | --- | --- | --- | --- |
-| Jun Lim | Frontend Developer | [Jun's Commits](https://github.com/guapbeast/team10/commits?author=peacekeeper6) | [Jun's Github Profile](https://github.com/peacekeeper6) | 
-| Ŕithwikh Várma | Scrum Master | [Ŕithwikh's Commits Change](https://github.com/guapbeast/team10/commits?author=guapbeast) | [Ŕithwikh's Github Profile](https://github.com/guapbeast) | 
+| Jun Lim | Frontend Developer | [Jun's Commits](https://github.com/guapbeast/team10/commits?author=peacekeeper6) | [Jun's Github Profile](https://github.com/peacekeeper6) |
+| Ŕithwikh Várma | Scrum Master | [Ŕithwikh's Commits Change](https://github.com/guapbeast/team10/commits?author=guapbeast) | [Ŕithwikh's Github Profile](https://github.com/guapbeast) |
 | Allie Xiao | Deployment Manager | [Allie's Commits](https://github.com/guapbeast/team10/commits?author=xiaoa0) | [Allie's Github Profile](https://github.com/xiaoa0) |
 | Aidan Wu | Backend Developer | [Aidan's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | [Aidan's Github Profile](https://github.com/aidanywu) |
-| Placeholder | Backend Developer | [Placeholder](placeholder) | [Placeholder](Placeholder) |
+| Vaishavi Jayashankar | Backend Developer | [Vaishavi's Commits]() | [Vaishavi's Github Profile]() |
 
 
 ### Map 
