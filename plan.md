@@ -1,13 +1,35 @@
+# Team 10 
 
-### Guides
-Guides to everything you might want out of a vacation
+### Agile Mantra
 
-Split into 4 categories
+### Purpose
 
-![image](https://user-images.githubusercontent.com/87632049/213261080-994150ec-a11d-4c45-b99c-e280ba4a122f.png)
+### Goals
+
+
+### About the Creators
+| Name | Role | Commits | Profile |
+| --- | --- | --- | --- |
+| Jun Lim | Frontend Developer | [Jun's Commits](https://github.com/guapbeast/team10/commits?author=peacekeeper6) | [Jun's Github Profile](https://github.com/peacekeeper6) | 
+| Ŕithwikh Várma | Scrum Master | [Ŕithwikh's Commits Change](https://github.com/guapbeast/team10/commits?author=guapbeast) | [Ŕithwikh's Github Profile](https://github.com/guapbeast) | 
+| Allie Xiao | Deployment Manager | [Allie's Commits](https://github.com/guapbeast/team10/commits?author=xiaoa0) | [Allie's Github Profile](https://github.com/xiaoa0) |
+| Aidan Wu | Backend Developer | [Aidan's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | [Aidan's Github Profile](https://github.com/aidanywu) |
+| Placeholder | Backend Developer | [Placeholder](placeholder) | [Placeholder](Placeholder) |
 
 
 ### Map page
 Finding hotels by location in a map search
 
 ![image](https://user-images.githubusercontent.com/87632049/213259966-f6930bc8-300f-4c13-a8bb-38b56075df26.png)
+
+
+### Guides
+Guides to everything you might want out of a vacation
+
+Split into 4 categories
+
+![image](https://user-images.githubusercontent.com/87632049/213338186-876cabbe-9d56-4a0d-b05a-ddea4eb287fd.png)
+
+
+### Budgeting
+
