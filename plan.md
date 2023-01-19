@@ -60,3 +60,9 @@ Itineraries made with categories - what to pack, travel, food, hotel, activities
 
 
 ![Compsci WireFrame Budgeting (1)](https://user-images.githubusercontent.com/86858869/213388266-cb844365-3d50-43a4-b266-2078a7eb19a8.jpg)
+
+### User Profile
+Use friends feature to locate your friends' itineraries and the wishlist feature to keep track of places you want to go.
+
+![User Profile Page](https://user-images.githubusercontent.com/56620132/213504443-38eb5d2f-d2ee-4a3a-84d2-f9f1e324fe87.png)
+
