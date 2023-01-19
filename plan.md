@@ -30,7 +30,7 @@ Split into 4 categories
 
 Each guide is written in blog format, kind of like fastpages 
 
-We list out things like popular activites, activities based on location (beach, city, rural, etc), activities that we personally recommend
+We list out things like popular activities, activities based on location (beach, city, rural, etc), activities that we personally recommend
 
 ![image](https://user-images.githubusercontent.com/87632049/213387151-bdfb0f55-c68c-438a-ac66-c000ca2ff2a5.png)
 
