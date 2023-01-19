@@ -9,6 +9,7 @@ To ease the process of planning for your next vacation
 - Reflect and review plans to accomodate changes
 - Collaborate to improve team learning and skills
 - Work with customer satisfaction in mind
+- Hold each other accountable while building each other up
 
 ### About the Creators
 
