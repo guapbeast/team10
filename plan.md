@@ -25,7 +25,7 @@ Finding hotels by location in a map search
 
 ### Itinerary 
  
-Itineraries made with categories (what to pack, travel, food, hotel, activities) - add "none" option to all of these
+Itineraries made with categories (what to pack, travel, food, hotel, activities, important notes) - add "none" option to all of these
 
 **Wireframes go here
 **
