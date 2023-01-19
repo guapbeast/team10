@@ -25,8 +25,11 @@ Finding hotels by location in a map search
 
 ### Itinerary 
  
+Itineraries made with categories (travel, hotel, activities) - add "none" option to all of these
+
 **Wireframes go here
 **
+
 ### Guides
 Guides to everything you might want out of a vacation
 
@@ -37,6 +40,7 @@ Split into 4 categories
 **Wireframes go here
 **
 
+For wireframe of guides - popular activities, activities based on whether they are near things like the beach or the city, activities that we personally recommend
 
 ### Budgeting
 
