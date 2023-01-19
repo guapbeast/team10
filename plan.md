@@ -3,9 +3,7 @@
 ### Agile Mantra
 
 ### Purpose
-
-### Goals
-
+To ease the process of planning for your next vacation
 
 ### About the Creators
 | Name | Role | Commits | Profile |
