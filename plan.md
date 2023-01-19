@@ -26,7 +26,12 @@ Split into 4 categories
 **Wireframes go here
 **
 
-For wireframe of guides - popular activities, activities based on whether they are near things like the beach or the city, activities that we personally recommend=
+Each guide is written in blog format, kind of like fastpages 
+
+We list out things like popular activites, activities based on location (beach, city, rural, etc), activities that we personally recommend
+
+![image](https://user-images.githubusercontent.com/87632049/213387151-bdfb0f55-c68c-438a-ac66-c000ca2ff2a5.png)
+
 
 ### Map 
 Finding hotels by location in a map search
@@ -44,5 +49,5 @@ Itineraries made with categories - what to pack, travel, food, hotel, activities
 
 ### Budgeting
 
-
-![Compsci WireFrame Budgeting](https://user-images.githubusercontent.com/86858869/213385551-a0801f4a-0c4d-4997-b0fe-d91c563caa07.jpg)
+**Wireframes go here
+**
