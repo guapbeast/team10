@@ -42,7 +42,7 @@ For planning out your next vacation
 
 Itineraries made with categories - what to pack, travel, food, hotel, activities, important notes, etc
 
-![image](https://user-images.githubusercontent.com/87632049/213381073-e424f3d8-6782-45a1-9001-17eeede5585a.png)
+![image](https://user-images.githubusercontent.com/87632049/213389140-13195327-295b-4ae4-83ea-3f3eb4e0f0a5.png)
 
 ### Budgeting
 
