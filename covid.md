@@ -1,3 +1,4 @@
+<script>
 const options = {
 	method: 'GET',
 	headers: {
@@ -10,3 +11,4 @@ fetch('https://covid-193.p.rapidapi.com/countries', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+</script>
