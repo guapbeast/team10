@@ -13,6 +13,7 @@
         min-width: 120px;
     }
     .new:hover {
+        cursor: pointer;
         background-color: #c30000;
         color: #fff;
         transition: 0.5s;
