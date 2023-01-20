@@ -5,6 +5,7 @@
         color: #c30000;
         border-color: #c30000;
         font-size: 25px;
+        font-weight: 700;
         border-radius:10px; 
         padding:15px;
         min-height:30px; 
@@ -19,5 +20,4 @@
 </style>
 
 <button onclick="window.location.href='/team10/newitinerary';" class="new">Add New</button>
-
 
