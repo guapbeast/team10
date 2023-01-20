@@ -4,8 +4,8 @@
         top:50%;
         background-color:#eeeeee;
         color: #c30000;
-        border:none; 
-        text-size: 20px;
+        /* border:none;  */
+        text-size: 25px;
         border-radius:10px; 
         padding:15px;
         min-height:30px; 
@@ -13,6 +13,7 @@
     }
     .new:hover {
         background-color: #c30000;
+        color: black;
         transition: 0.5s;
     }
 </style>
