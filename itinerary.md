@@ -19,6 +19,6 @@
     }
 </style>
 
-<button onclick="window.location.href="guapbeast.github.io/team10/newitinerary" class="new">Add New</button>
+<button onclick="window.location.href='guapbeast.github.io/team10/newitinerary';" class="new">Add New</button>
 
 
