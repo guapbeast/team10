@@ -1,9 +1,10 @@
 <style>
     .new {
-        position: absolute;
-        top:50%;
+        /* position: absolute; */
+        top:5%;
         background-color:#eeeeee;
         color: #c30000;
+        border-color: #c30000;
         /* border:none;  */
         text-size: 25px;
         border-radius:10px; 
@@ -13,7 +14,7 @@
     }
     .new:hover {
         background-color: #c30000;
-        color: black;
+        color: #fff;
         transition: 0.5s;
     }
 </style>
