@@ -23,7 +23,7 @@
     <img src="/images/delnorte.jpeg" alt="school" style="width:100%">
   </div>
 <div class="column">
-    <img src="/images/delnorte-aerial.jpeg" alt="school" style="width:100%">
+    ![delnorte-aerial](https://user-images.githubusercontent.com/86858869/213762349-a5a1af6c-04f2-49e7-a193-9f3008b8963d.jpeg)
   </div>
 
   
