@@ -68,3 +68,12 @@ Use friends feature to locate your friends' itineraries and the wishlist feature
 
 ![User Profile Page](https://user-images.githubusercontent.com/56620132/213504443-38eb5d2f-d2ee-4a3a-84d2-f9f1e324fe87.png)
 
+
+
+
+### CSS Redesign
+
+<img width="954" alt="Homepage Wireframe" src="https://user-images.githubusercontent.com/86858869/214357888-94d125ee-03d7-4bf9-a692-e65a7fac0235.png">
+
+
+
