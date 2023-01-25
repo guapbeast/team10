@@ -1,16 +1,18 @@
 {% include guides.html %}
 
+## Cultural
+
 Navigate the links above to start exploring!
 
 > ☆ - Popular US Travel Destination
 
 > ☂ - Team 10 Recommendation
 
-## Cultural
-
 ![CULTURE](https://wander-lush.org/wp-content/uploads/2020/12/Cultural-tourism-destinations-Andalusia-CanvaPro.jpg)
 
 > Places to see to enjoy rich culture and revealed ancient history.
+
+---------
 
 # Metropolitan Places
 
