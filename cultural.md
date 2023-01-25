@@ -31,3 +31,6 @@ Navigate the links above to start exploring!
 ### Rural Places
 - a
 - b
+
+
+<!-- credit: https://www.tripstodiscover.com/most-cultured-cities-in-america-to-visit/ -->
