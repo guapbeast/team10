@@ -1,6 +1,6 @@
 {% include guides.html %}
 
-Guides to everything you might want out of your next vacation!
+Guides to everything you might want out of your next vacation -- Popular or Un-popular!
 
 > Navigate the links above to start exploring!
 
