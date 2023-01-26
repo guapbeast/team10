@@ -8,7 +8,7 @@ Guides to everything you might want out of your next vacation -- Popular or Un-p
 ![ADVENTURE](https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80)
 
 ## Fun:
-![Fun](https://images.squarespace-cdn.com/content/v1/5a8a22c59f8dce86ccc25373/e89b22a7-8fdc-4d63-a4ca-1aaade38fa60/Arcade+Monsters+Lido-2.jpg)
+![FUN](https://images.squarespace-cdn.com/content/v1/5a8a22c59f8dce86ccc25373/e89b22a7-8fdc-4d63-a4ca-1aaade38fa60/Arcade+Monsters+Lido-2.jpg)
 
 ## Culture:
 ![CULTURE](https://wander-lush.org/wp-content/uploads/2020/12/Cultural-tourism-destinations-Andalusia-CanvaPro.jpg)

@@ -13,8 +13,6 @@ Navigate the links above to start exploring!
 > Fun, exciting places to get your game on and play.
 
 ---------
-
----------
 # Popular US Travel Destinations
 
 ![VEGAS](https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/01/00/2b/the-strip.jpg?w=600&h=400&s=1)
