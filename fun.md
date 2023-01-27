@@ -29,7 +29,7 @@ Navigate the links above to start exploring!
 > Considered one of the oldest amusement parks in the US, Belmont Park exists as a "pay-as-you-go" park. It features the iconic Giant Dipper, a wooden rollercoaster built during the "Golden Age of Coasters" opening in 1925. It features many food stands including a dole whip stand, and many other attractions with scenic San Diegan views and coastlines. 
 <!-- https://www.huffpost.com/entry/lesser-known-amusement-parks_l_5dcceec7e4b03a7e0294dd61 -->
 
-![HERSHEYPARK](https://www.belmontpark.com/wp-content/uploads/2020/07/BelmontPark-aerial_midway_north_edit-scaled.jpg)
+![HERSHEYPARK](https://nepascene.com/wp-content/uploads/2020/05/Hersheypark-chocolate-characters-carousel-Hershey-Pennsylvania.jpg)
 ## ☂ Hersheypark; Hershey, Pennsylvania
 > Yes, you heard that right, a whole theme park themed around the Hershey Chocolate Company Franchise! Founded in 1906 by Milton S. Hershey, the theme park features a Hershey Park and a Hershey Chocolate World, with coasters, family-friendly attractions, and lots of great fair food! It is also known to be a "clean and green destination for family fun" on their official website!
 <!-- https://www.google.com/search?q=Hersheypark&oq=Hersheypark&aqs=chrome..69i57j0i271.230j0j9&sourceid=chrome&ie=UTF-8 -->
