@@ -25,14 +25,14 @@ Navigate the links above to start exploring!
 ---------
 # Un-Popular US Travel Destinations
 
-![IMAGE](google.com)]
-## City, State
-> Body
+![LEAVENWORTH](https://www.myglobalviewpoint.com/wp-content/uploads/2021/02/Leavenworth-Washington-Facades.jpg)
+## Leavenworth, Washington
+> Learn about the vivid and colorful Bavarian folk culture, rich with pastel colored buildings, beer halls, and homey scenery. Additionally, you may come here to enjoy hiking, biking, climbing, and other fun activities. Alongside its German cuisine, get your mountain spirit on here at this "Germany in the USA".
+<!-- https://www.myglobalviewpoint.com/best-hidden-vacation-spots-in-us/ -->
 
-### Rural Places
-![IMAGE](google.com)]
-## City, State
-> Body
+![MOLOKAI](https://www.gohawaii.com/sites/default/files/styles/narrow_carousel_large/public/content-carousel-images/07979.jpg?itok=m-MumPZY)
+## Molokai, Hawaii
+> Molokai is rich in authentic Hawaiian culture and is incredibly unique from the rest of Hawaii because of this fact. Nearly fully secluded, there practically no industrialism like luxury resorts, street lights, or tall buildings; just pure nature and rich culture. Come to learn about the birthplace of hula and having amny grat landscapes, valleys, waterfalls, and some of the notably best beaches in all of the US. 
 
 
 <!-- credit: https://www.tripstodiscover.com/most-cultured-cities-in-america-to-visit/ -->
