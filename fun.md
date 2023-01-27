@@ -6,9 +6,9 @@ Navigate the links above to start exploring!
 
 > ☂ - Team 10 Recommendation
 
-![Fun](https://images.squarespace-cdn.com/content/v1/5a8a22c59f8dce86ccc25373/e89b22a7-8fdc-4d63-a4ca-1aaade38fa60/Arcade+Monsters+Lido-2.jpg)
+![FUN](https://trekbaron.com/wp-content/uploads/2020/08/types-of-roller-coasters-Aug262020-1-min.jpg)
 
-> Fun, exciting places to get your game on and play.
+> Fun, exciting places to get your game on, your adrenaline rushing, and play.
 
 ---------
 # Popular US Travel Destinations

@@ -9,19 +9,20 @@ Guides to everything you might want out of your next vacation -- Popular or Un-p
 <table>
   <tr>
     <td>Adventure</td>
-    <td><img src=”(https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80)” alt=”Image” height=”(50px)” width=”(50px)”></td>
+    <td><a href="https://guapbeast.github.io/team10/adventure"><img src="images/adventure.png"></a>
+</td>
   </tr>
   <tr>
     <td>Fun</td>
-    <td>Maria Anders</td>
+    <td><a href="https://guapbeast.github.io/team10/fun"><img src="images/fun.png"></a>
   </tr>
   <tr>
     <td>Culture</td>
-    <td>Francisco Chang</td>
+    <td><a href="https://guapbeast.github.io/team10/culture"><img src="images/culture.png"></a>
   </tr>
   <tr>
     <td>Relaxation</td>
-    <td>Francisco Chang</td>
+    <td><a href="https://guapbeast.github.io/team10/relax"><img src="images/relax.png"></a>
   </tr>
 </table>
 
@@ -48,7 +49,7 @@ Guides to everything you might want out of your next vacation -- Popular or Un-p
 ![ADVENTURE](https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80)
 
 ## Fun:
-![FUN](https://images.squarespace-cdn.com/content/v1/5a8a22c59f8dce86ccc25373/e89b22a7-8fdc-4d63-a4ca-1aaade38fa60/Arcade+Monsters+Lido-2.jpg)
+![FUN](https://trekbaron.com/wp-content/uploads/2020/08/types-of-roller-coasters-Aug262020-1-min.jpg)
 
 ## Culture:
 ![CULTURE](https://wander-lush.org/wp-content/uploads/2020/12/Cultural-tourism-destinations-Andalusia-CanvaPro.jpg)
