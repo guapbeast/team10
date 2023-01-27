@@ -4,6 +4,46 @@ Guides to everything you might want out of your next vacation -- Popular or Un-p
 
 > Navigate the links above to start exploring!
 
+<body>
+
+<table>
+  <tr>
+    <td>Adventure</td>
+    <td><img src=”(https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80)” alt=”Image” height=”(50px)” width=”(50px)”></td>
+  </tr>
+  <tr>
+    <td>Fun</td>
+    <td>Maria Anders</td>
+  </tr>
+  <tr>
+    <td>Culture</td>
+    <td>Francisco Chang</td>
+  </tr>
+  <tr>
+    <td>Relaxation</td>
+    <td>Francisco Chang</td>
+  </tr>
+</table>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Adventure:
 ![ADVENTURE](https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80)
 
