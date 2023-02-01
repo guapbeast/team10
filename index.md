@@ -1,8 +1,8 @@
-# Team 10 US Travel Website
+## Team 10 US Travel Website
+
+> Explore the best of the US with our reviews, resources, and more, right at your fingertips!
 
 ![image](https://user-images.githubusercontent.com/85912486/216130241-ef8c1c0a-9a10-4c2e-bbea-ff691c09d430.png)
-
-### Explore the best of the US with our reviews, resources, and more, right at your fingertips!
 
 ## About the Creators
 
