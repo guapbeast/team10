@@ -1,8 +1,3 @@
-## Team 10 Website
-> View [Del Norte High School](https://www.powayusd.com/dnhs) to learn about Del Norte High. 
-> - [Nighthawk Coding Society](https://csacoders.nighthawkcodingsociety.com/)
-> - [Google Maps 16601 Nighthawk Lane, San Diego, California 92127](https://www.google.com/maps/dir//Del+Norte+High+School,+16601+Nighthawk+Ln,+San+Diego,+CA+92127/@33.0133188,-117.1247439,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x80dba1ec35227da1:0x59bf2ef553075a2b!2m2!1d-117.1214139!2d33.0144484!3e0)
-
 # Team 10 US Travel Website
 
 ![image](https://user-images.githubusercontent.com/85912486/216130241-ef8c1c0a-9a10-4c2e-bbea-ff691c09d430.png)
@@ -10,6 +5,7 @@
 ### Explore the best of the US with our reviews, resources, and more, right at your fingertips!
 
 ## About the Creators
+
 | Name | Role | Commits | Profile |
 | --- | --- | --- | --- |
 | Jun Lim | Frontend Developer | [Jun's Commits](https://github.com/guapbeast/team10/commits?author=peacekeeper6) | [Jun's Github Profile](https://github.com/peacekeeper6) |
@@ -19,6 +15,11 @@
 | Vaishavi Jayashankar | Frontend Developer | [Vaishavi's Commits](https://github.com/guapbeast/team10/commits?author=vaishavijay) | [Vaishavi's Github Profile](https://github.com/vaishavijay) |
 
 ## Del Norte High School
+
+> View [Del Norte High School](https://www.powayusd.com/dnhs) to learn about Del Norte High. 
+> - [Nighthawk Coding Society](https://csacoders.nighthawkcodingsociety.com/)
+> - [Google Maps 16601 Nighthawk Lane, San Diego, California 92127](https://www.google.com/maps/dir//Del+Norte+High+School,+16601+Nighthawk+Ln,+San+Diego,+CA+92127/@33.0133188,-117.1247439,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x80dba1ec35227da1:0x59bf2ef553075a2b!2m2!1d-117.1214139!2d33.0144484!3e0)
+
 
 <div class="row">
   <div class="column">
