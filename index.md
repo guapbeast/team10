@@ -4,16 +4,6 @@
 
 ![image](https://user-images.githubusercontent.com/85912486/216130241-ef8c1c0a-9a10-4c2e-bbea-ff691c09d430.png)
 
-## About the Creators
-
-| Name | Role | Commits | Profile |
-| --- | --- | --- | --- |
-| Jun Lim | Frontend Developer | [Jun's Commits](https://github.com/guapbeast/team10/commits?author=peacekeeper6) | [Jun's Github Profile](https://github.com/peacekeeper6) |
-| Ŕithwikh Várma | Scrum Master | [Ŕithwikh's Commits Change](https://github.com/guapbeast/team10/commits?author=guapbeast) | [Ŕithwikh's Github Profile](https://github.com/guapbeast) |
-| Allie Xiao | Deployment Manager | [Allie's Commits](https://github.com/guapbeast/team10/commits?author=xiaoa0) | [Allie's Github Profile](https://github.com/xiaoa0) |
-| Aidan Wu | Backend Developer | [Aidan's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | [Aidan's Github Profile](https://github.com/aidanywu) |
-| Vaishavi Jayashankar | Frontend Developer | [Vaishavi's Commits](https://github.com/guapbeast/team10/commits?author=vaishavijay) | [Vaishavi's Github Profile](https://github.com/vaishavijay) |
-
 ## Del Norte High School
 
 > View [Del Norte High School](https://www.powayusd.com/dnhs) to learn about Del Norte High. 
@@ -28,3 +18,13 @@
   <div class="col-md-4 float-left animate-out mb-4">
 
 <p>Find the US government’s open source projects at <a href="https://code.gov/">Code.gov</a></p>
+
+## About the Creators
+
+| Name | Role | Commits | Profile |
+| --- | --- | --- | --- |
+| Jun Lim | Frontend Developer | [Jun's Commits](https://github.com/guapbeast/team10/commits?author=peacekeeper6) | [Jun's Github Profile](https://github.com/peacekeeper6) |
+| Ŕithwikh Várma | Scrum Master | [Ŕithwikh's Commits Change](https://github.com/guapbeast/team10/commits?author=guapbeast) | [Ŕithwikh's Github Profile](https://github.com/guapbeast) |
+| Allie Xiao | Deployment Manager | [Allie's Commits](https://github.com/guapbeast/team10/commits?author=xiaoa0) | [Allie's Github Profile](https://github.com/xiaoa0) |
+| Aidan Wu | Backend Developer | [Aidan's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | [Aidan's Github Profile](https://github.com/aidanywu) |
+| Vaishavi Jayashankar | Frontend Developer | [Vaishavi's Commits](https://github.com/guapbeast/team10/commits?author=vaishavijay) | [Vaishavi's Github Profile](https://github.com/vaishavijay) |
