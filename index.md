@@ -5,7 +5,8 @@
 
 # Team 10 US Travel Website
 
-![image](https://user-images.githubusercontent.com/85912486/216129510-c967264d-8740-42cd-836a-71f31c2e0249.png)
+[![image](https://user-images.githubusercontent.com/85912486/216129510-c967264d-8740-42cd-836a-71f31c2e0249.png)
+](https://media.nomadicmatt.com/usaguide.jpg)
 
 ### Explore the best of the US with our reviews, resources, and more, right at your fingertips!
 
