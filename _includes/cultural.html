@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MYLOGO.COM</h1>
+<hr>
+
+<h2>Cultural</h2>
+<p>Places to see to enjoy rich culture and revealed ancient history. </p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img href="/images/culture2.png" alt="Culture" style="width:100%">
+      <h3>New York City, New York (Popular)</h3>
+      <p>Come visit the Big Apple and enjoy places from the Met, Broadway, and even the well-renowned New York city style pizza! New York offers lots of places that are rich in culture and art with a modern twist; the ideal place for the city lover.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img href="/images/culture3.png" alt="Culture" style="width:100%">
+      <h3>Toas, New Mexico (Popular)</h3>
+      <p>Come visit the Toas to enjoy and explore rich Native American culture at museums and galleries, each rich in art like pottery and jewelry. Perfect for anyone wanting to learn more about ancient history and the deep history and roots of the US. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img href="/images/culture4.png" alt="Culture" style="width:100%">
+      <h3>Leavenworth, Washington (Unpopular)</h3>
+      <p>Learn about the vivid and colorful Bavarian folk culture, rich with pastel colored buildings, beer halls, and homey scenery. Additionally, you may come here to enjoy hiking, biking, climbing, and other fun activities. Alongside its German cuisine, get your mountain spirit on here at this "Germany in the USA".</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+  <img src="/images/culture5.png" alt="Bear" style="width:100%">
+      <h3>Molokai, Hawaii (Unpopular)</h3>
+      <p>Molokai is rich in authentic Hawaiian culture and is incredibly unique from the rest of Hawaii because of this fact. Nearly fully secluded, there practically no industrialism like luxury resorts, street lights, or tall buildings; just pure nature and rich culture. Come to learn about the birthplace of hula and having amny grat landscapes, valleys, waterfalls, and some of the notably best beaches in all of the US. </p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="/images/culture1.png" alt="Bear" style="width:100%">
+  <h3>Some Other Work</h3>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>

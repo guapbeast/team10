@@ -1,5 +1,7 @@
 {% include guides.html %}
 
+{% include cultural.html %}
+
 ## Cultural
 
 Navigate the links above to start exploring!
