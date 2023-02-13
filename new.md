@@ -3,8 +3,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 150px;
+    grid-column-gap: 15%;
+    grid-row-gap: 30%;
     }
     
     .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -25,23 +25,23 @@
     color: #333;
     width: 880px;
     height: 200px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
 
     transition: box-shadow 320ms;
 
-    box-shadow: 20px 20px 8px 20px rgba(15, 191, 214, 0.1);
+    box-shadow: 15% 15% 8px 15% rgba(15, 191, 214, 0.1);
     
     border-radius: 3px;
     font-size: 18px;
-    border: 20px;
+    border: 15%;
 }
 
 textarea:focus {
 
-    outline: 20px;
-    outline-offset: 20px;
-    box-shadow: 20px 20px 1px 5px rgba(219, 14, 14, 0.12);
+    outline: 15%;
+    outline-offset: 15%;
+    box-shadow: 15% 15% 1px 5px rgba(219, 14, 14, 0.12);
 }
 
 textarea:-moz-placeholder {
@@ -54,8 +54,8 @@ textarea:-moz-placeholder {
         border-color: #c30000;
         font-size: 25px;
         font-weight: 700;
-        border-radius:20px; 
-        padding:15px;
+        border-radius:15%; 
+        padding:0%;
         min-height:30px; 
         min-width: 660px;
     }
@@ -78,23 +78,23 @@ textarea:-moz-placeholder {
           <br><br>
           </center>
           <div class="parent">
-            <div class="div1"><img style="margin-top: 75px; margin-left: 15px; width: 150px; height: 150px;" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/suitcase.png"></div>
-            <div class="div2" style="margin-left:20px"> <h2 style="margin-left:350px">Packing</h2> <br> 
+            <div class="div1"><img style="margin-top: 15%; margin-left: 0%; width: 30%; height: 30%;" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/suitcase.png"></div>
+            <div class="div2" style="margin-left:15%"> <h2 style="margin-left:50%">Packing</h2> <br> 
                   <textarea id='resizer' placeholder='Enter all of your packing needs'></textarea> <input id="expenses1" style="margin-left:35px;margin-bottom:50px" type="number" placeholder='Enter possible expenses'> </div>
-            <div class="div3"><img style="margin-top: 75px; margin-left: 15px; width: 150px; height: 150px;" src="https://cdn-icons-png.flaticon.com/512/0/614.png"></div>
-            <div class="div4" style="margin-left:20px"> <h2 style="margin-left:355px">Travel</h2> <br> 
+            <div class="div3"><img style="margin-top: 15%; margin-left: 0%; width: 30%; height: 30%;" src="https://cdn-icons-png.flaticon.com/512/0/614.png"></div>
+            <div class="div4" style="margin-left:15%"> <h2 style="margin-left:50%">Travel</h2> <br> 
                   <textarea id='resizer' placeholder='Enter all planned modes of travel'></textarea> <input id="expenses2" style="margin-left:35px;margin-bottom:50px" type="number" placeholder='Enter possible expenses'> </div>
-            <div class="div5"><img style="margin-top: 75px; margin-left: 15px; width: 150px; height: 150px;" src="https://uxwing.com/wp-content/themes/uxwing/download/food-and-drinks/meal-food-icon.png"></div>
-            <div class="div6" style="margin-left:20px"><h2 style="margin-left:360px">Food</h2> <br> 
+            <div class="div5"><img style="margin-top: 15%; margin-left: 0%; width: 30%; height: 30%;" src="https://uxwing.com/wp-content/themes/uxwing/download/food-and-drinks/meal-food-icon.png"></div>
+            <div class="div6" style="margin-left:15%"><h2 style="margin-left:50%">Food</h2> <br> 
                   <textarea id='resizer' placeholder='Enter all planned modes of travel'></textarea> <input id="expenses3" style="margin-left:35px;margin-bottom:50px" type="number" placeholder='Enter possible expenses'> </div>
-            <div class="div7"><img style="margin-top: 75px; margin-left: 15px; width: 150px; height: 150px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAAC7u7tqamqjo6MnJyfb29uqqqrl5eXx8fF5eXn39/f5+fnr6+vf398wMDAdHR1BQUG0tLRHR0eMjIxiYmLDw8OdnZ3MzMxvb29OTk5GRkYWFhY7OzuEhITGxsZbW1uTk5NWVlY2NjZ+fn5hetxnAAAD50lEQVR4nO3d6XaiQBCGYdoFBQwuUVxjYuL9X+NoJiYB6bK6JVYX53v+Dki/h4hIgxNFAAAAAAAAAAAAAAAAAAAAAAAALZMv027JsTeUHlOTko2psZAeVnOSur6T8Uh6ZE0ZWwrNRnpkDenYAo1ZSY+tGW/2wrX02JphDzQv0mNrBlHYlx5bM1CoHwr1Q6F+KNQPhfqhUD8U2mTxYL/ebDdv3XRZPD1qtD68CofLbXnRybp44JjdeBQW09rF94HuSefC2cS6Qpo9ePAsjoV5/f67GDx8/Le5FR7IvpP38K6yOhXWXh0v2yUCESSHwuHtvrPaKY+k6DSsWA15b3t+ITPQmOtjatLlrutmt01nN+eQiPXLhTl/w9U/1PjuFFJKX5wn1iwV2iZw6lQuJT/dm3DbntiTxGqlwheXDR5LmyAmDprzHt9ZOHfb3qvn3r/He35PofM76dcWiNmthtWfUxEr/Cq0TjLazH/WHdwxZld15//E4j+FHrshESk0qWeh8y78fbB5aKEZX51TEQt/F658NpXJFBpTPagSi34Xpj4bGkgVVmfniSX7jGXsXsQKzcy10POkKxErLCcSy10Ke36b6cgVlv5QicUuhZ5fDPaChSZ3Kvzw28izZKEZORSOPLexEy3cOBRmvhvJJAvNkl/o/fUuES38vppCLPJV6PDlvnYTUoXbvy+MZQsvn4rEEl+F7CtQVdKFhlvo/R39Sbpw2e5j6Rn3E98+FUMbiRcOmIXPfi//IfqJ/6nPLNz7vfxavvDzDJz450uh58WyXgCFR16h56EmDqDQ8Ao934hRCIUrXqHXGPdBFM55hV7fn+IgCqfM66WOsxZnz1EQhacPZeIffwo9jjWvgRTmzHmLg+sLT6NACjvc2TXXM7c8lMIlt9Dxwv4hCqXwyJ4DdjrYlB7sky1c8O9UcPjY32XhFE75hSP+W7F8u4lsYd/hfhr2d/3K/TSyhTuXe6J4lxU/qpPpsoXG6b62jDEXfP3gqabCKFrfer3Z9Tq6CqOCfLW3uhsTlRVSJ3Dj19oV1BVGo8OubumF7f45fYUn8bxfXnQxs9/rqbLwJIk7598LWafzXkHf4lksupLwzEwLoFA/FOpHFE6afkTisYr8ZqF6k1nbC///npf0GP5Y2vpCE7e+kLxe2grktbZ2QKF+KNQPhfqhUD8U6odC/VCoHwr1Q6F+KNSPLJz3dCDvmyQLLT/4EhzyCUmy0PqzPYEhfxIBhSqgEIXhQyEKw4dCFIYPhSgMHwpRGD4UojB8KERh+FDY9kLiubaFlv+ce0g9/yc9OAAAAAAAAAAAAAAAAAAAAAAAgCb9AzqPYiBuj4AyAAAAAElFTkSuQmCC"></div>
-            <div class="div8" style="margin-left:20px"><h2 style="margin-left:300px">Places to Stay</h2> <br> 
+            <div class="div7"><img style="margin-top: 15%; margin-left: 0%; width: 30%; height: 30%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAAC7u7tqamqjo6MnJyfb29uqqqrl5eXx8fF5eXn39/f5+fnr6+vf398wMDAdHR1BQUG0tLRHR0eMjIxiYmLDw8OdnZ3MzMxvb29OTk5GRkYWFhY7OzuEhITGxsZbW1uTk5NWVlY2NjZ+fn5hetxnAAAD50lEQVR4nO3d6XaiQBCGYdoFBQwuUVxjYuL9X+NoJiYB6bK6JVYX53v+Dki/h4hIgxNFAAAAAAAAAAAAAAAAAAAAAAAALZMv027JsTeUHlOTko2psZAeVnOSur6T8Uh6ZE0ZWwrNRnpkDenYAo1ZSY+tGW/2wrX02JphDzQv0mNrBlHYlx5bM1CoHwr1Q6F+KNQPhfqhUD8U2mTxYL/ebDdv3XRZPD1qtD68CofLbXnRybp44JjdeBQW09rF94HuSefC2cS6Qpo9ePAsjoV5/f67GDx8/Le5FR7IvpP38K6yOhXWXh0v2yUCESSHwuHtvrPaKY+k6DSsWA15b3t+ITPQmOtjatLlrutmt01nN+eQiPXLhTl/w9U/1PjuFFJKX5wn1iwV2iZw6lQuJT/dm3DbntiTxGqlwheXDR5LmyAmDprzHt9ZOHfb3qvn3r/He35PofM76dcWiNmthtWfUxEr/Cq0TjLazH/WHdwxZld15//E4j+FHrshESk0qWeh8y78fbB5aKEZX51TEQt/F658NpXJFBpTPagSi34Xpj4bGkgVVmfniSX7jGXsXsQKzcy10POkKxErLCcSy10Ke36b6cgVlv5QicUuhZ5fDPaChSZ3Kvzw28izZKEZORSOPLexEy3cOBRmvhvJJAvNkl/o/fUuES38vppCLPJV6PDlvnYTUoXbvy+MZQsvn4rEEl+F7CtQVdKFhlvo/R39Sbpw2e5j6Rn3E98+FUMbiRcOmIXPfi//IfqJ/6nPLNz7vfxavvDzDJz450uh58WyXgCFR16h56EmDqDQ8Ao934hRCIUrXqHXGPdBFM55hV7fn+IgCqfM66WOsxZnz1EQhacPZeIffwo9jjWvgRTmzHmLg+sLT6NACjvc2TXXM7c8lMIlt9Dxwv4hCqXwyJ4DdjrYlB7sky1c8O9UcPjY32XhFE75hSP+W7F8u4lsYd/hfhr2d/3K/TSyhTuXe6J4lxU/qpPpsoXG6b62jDEXfP3gqabCKFrfer3Z9Tq6CqOCfLW3uhsTlRVSJ3Dj19oV1BVGo8OubumF7f45fYUn8bxfXnQxs9/rqbLwJIk7598LWafzXkHf4lksupLwzEwLoFA/FOpHFE6afkTisYr8ZqF6k1nbC///npf0GP5Y2vpCE7e+kLxe2grktbZ2QKF+KNQPhfqhUD8U6odC/VCoHwr1Q6F+KNSPLJz3dCDvmyQLLT/4EhzyCUmy0PqzPYEhfxIBhSqgEIXhQyEKw4dCFIYPhSgMHwpRGD4UojB8KERh+FDY9kLiubaFlv+ce0g9/yc9OAAAAAAAAAAAAAAAAAAAAAAAgCb9AzqPYiBuj4AyAAAAAElFTkSuQmCC"></div>
+            <div class="div8" style="margin-left:15%"><h2 style="margin-left:50%">Places to Stay</h2> <br> 
                   <textarea id='resizer' placeholder='Enter all planned places to stay'></textarea> <input id="expenses4" style="margin-left:35px;margin-bottom:50px" type="number" placeholder='Enter possible expenses'> </div>
-            <div class="div9"><img style="margin-top: 75px; margin-left: 15px; width: 150px; height: 150px;" src="https://static.thenounproject.com/png/453090-200.png"></div>
-            <div class="div10" style="margin-left:20px"><h2 style="margin-left:340px">Activities</h2> <br> 
+            <div class="div9"><img style="margin-top: 15%; margin-left: 0%; width: 30%; height: 30%;" src="https://static.thenounproject.com/png/453090-200.png"></div>
+            <div class="div10" style="margin-left:15%"><h2 style="margin-left:50%">Activities</h2> <br> 
                   <textarea id='resizer' placeholder='Enter all planned activities'></textarea> <input id="expenses5" style="margin-left:35px;margin-bottom:50px" type="number" placeholder='Enter possible expenses'> </div>
-            <div class="div11"><img style="margin-top: 75px; margin-left: 16px; width: 150px; height: 150px;" src="https://cdn-icons-png.flaticon.com/512/78/78686.png"></div>
-            <div class="div12" style="margin-left:20px"><h2 style="margin-left:288px">Important Notes</h2> <br> 
+            <div class="div11"><img style="margin-top: 15%; margin-left: 0%; width: 30%; height: 30%;" src="https://cdn-icons-png.flaticon.com/512/78/78686.png"></div>
+            <div class="div12" style="margin-left:15%"><h2 style="margin-left:50%">Important Notes</h2> <br> 
                   <textarea id='resizer' placeholder='Enter any important notes to remember'></textarea> <input id="expenses6" style="margin-left:35px;margin-bottom:50px" type="number" placeholder='Enter possible expenses'> </div>
             </div>
             <br><br><br><br><br>
