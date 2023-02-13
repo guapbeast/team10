@@ -1,7 +1,5 @@
 {% include guides.html %}
 
-{% include cultural.html %}
-
 ## Cultural
 
 Navigate the links above to start exploring!
@@ -10,7 +8,7 @@ Navigate the links above to start exploring!
 
 ![CULTURE](https://wander-lush.org/wp-content/uploads/2020/12/Cultural-tourism-destinations-Andalusia-CanvaPro.jpg)
 
-> Places to see to enjoy rich culture and revealed ancient history.
+> Places to see to enjoy rich culture and discover ancient history.
 
 ---------
 
@@ -25,7 +23,7 @@ Navigate the links above to start exploring!
 > Come visit the Toas to enjoy and explore rich Native American culture at museums and galleries, each rich in art like pottery and jewelry. Perfect for anyone wanting to learn more about ancient history and the deep history and roots of the US. 
 
 ---------
-# Un-Popular US Travel Destinations
+# Underrated US Travel Destinations
 
 ![LEAVENWORTH](https://www.myglobalviewpoint.com/wp-content/uploads/2021/02/Leavenworth-Washington-Facades.jpg)
 ## Leavenworth, Washington
