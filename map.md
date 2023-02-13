@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <head>
     <title>Place Autocomplete Hotel Search</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -79,4 +79,4 @@
       defer
     ></script>
   </body>
-</html>
+</html> -->
