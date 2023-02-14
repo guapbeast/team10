@@ -107,7 +107,7 @@
     </body>
     <br>
     <br>
-    <a class="button" href="https://music.nighthawkcoders.tk/">Click To Return to the Quiz Homepage</a>
+  
 
     <script>
         const startButton = document.getElementById('start-btn')
