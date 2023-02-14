@@ -81,7 +81,7 @@
 
 <center>
 
-    <h1 style="text-align:center" style ="background-color: white";>Travel Quiz!</h1>
+
     &nbsp;&nbsp;
 
     &nbsp;&nbsp;
@@ -105,7 +105,6 @@
         </div>
     </div>
     </body>
-    </html>
     <br>
     <br>
     <a class="button" href="https://music.nighthawkcoders.tk/">Click To Return to the Quiz Homepage</a>
