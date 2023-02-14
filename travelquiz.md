@@ -11,19 +11,6 @@
         --hue-correct: 145;
     }
 
-    body {
-        --hue: var(--hue-neutral);
-        padding: 0;
-        margin: 0;
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        background-color: #7fdbfc;
-        font-family: "Comic Sans MS";
-    }
-
     body.correct {
         --hue: var(--hue-correct);
     }
