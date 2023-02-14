@@ -30,7 +30,7 @@
 
     transition: box-shadow 320ms;
 
-    box-shadow: 15% 15% 8px 15% rgba(15, 191, 214, 0.1);
+    box-shadow: 15% 15% 8px 15% red;
     
     border-radius: 3px;
     font-size: 18px;
