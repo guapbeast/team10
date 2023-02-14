@@ -25,8 +25,8 @@
     color: #333;
     width: 440px;
     height: 200px;
-    padding-left: 15%;
-    padding-right: 15%;
+    /* padding-left: 15%;
+    padding-right: 15%; */
 
     transition: box-shadow 320ms;
 
@@ -100,7 +100,7 @@ textarea:-moz-placeholder {
             <br><br><br><br><br>
             
             <center>
-            <button>Calculate Total expenses</button>
+            <button class="new">Calculate Total expenses</button>
             </center>
 
             <br><br><br>
