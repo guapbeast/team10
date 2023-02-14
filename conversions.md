@@ -1,36 +1,4 @@
 
-<link href="/static/assets/rithwikh/dark.css" rel="stylesheet"
-
-
-<style>
-
-
-
-
-
-    <style>
-     .p1 {
-         font-family: "Times New Roman", Times, serif;
-     }
-
-    .p2 {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .p3 {
-        color: rgba(255, 255, 255, 0.99);
-        font-family: "Monaco", "Monaco", fantasy;
-    }
-
-    body {
-        background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-        background-color: #1c87c9;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-</style>
-
 
 <center>
 
@@ -102,7 +70,5 @@
     </body>
     </html>
 
-
 </center>
-
 
