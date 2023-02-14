@@ -5,6 +5,8 @@
         <label>Fahrenheit</label>
         <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConvert(this.value)" onchange="temperatureConvert(this.value)">
     </p>
+    
+    
     <p>Celsius: <span id="outputCelsius"></span></p>
 
     <script>
