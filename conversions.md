@@ -1,6 +1,4 @@
-{% extends "layouts/base.html" %}
 
-{% block body %}
 <link href="/static/assets/rithwikh/dark.css" rel="stylesheet"
 
 
@@ -103,10 +101,7 @@
 
     </body>
     </html>
-    {% endblock %}
 
-    {% block background %}
-    {% endblock %}
 
 </center>
 
