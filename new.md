@@ -23,7 +23,7 @@
     textarea{
     resize:none;
     color: #333;
-    width: 880px;
+    width: 440px;
     height: 200px;
     padding-left: 15%;
     padding-right: 15%;
