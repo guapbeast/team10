@@ -20,7 +20,7 @@
     </script>
 
 
-        <div class="powr-weather" id="be801033_1638823897"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+     
     <p>To Convert the Celsius temperature to Fahrenheit, inupt below.</p>
 
     <p>
