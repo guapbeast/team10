@@ -78,7 +78,7 @@ textarea:-moz-placeholder {
           <br><br>
           </center>
           <div class="parent">
-            <div class="div1"><img style="background-color:red;color:red;margin-top: 95%; margin-left: 0%; width: 100px; height: 100px;" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/suitcase.png"></div>
+            <div class="div1"><img style="margin-top: 95%; margin-left: 0%; width: 100px; height: 100px;" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/suitcase.png"></div>
             <div class="div2" style="margin-left:25%"> <h2 style="margin-left:50%">Packing</h2> <br> 
                   <textarea id='packing-input' placeholder='Enter all of your packing needs'></textarea> <br><br> <div style="padding-left: 10%"><input id="expenses1" type="number" placeholder='Enter possible expenses'></div> </div>
             <div class="div3"><img style="margin-top: 95%; margin-left: 0%; width: 100px; height: 100px;" src="https://cdn-icons-png.flaticon.com/512/0/614.png"></div>
