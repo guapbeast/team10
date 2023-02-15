@@ -25,7 +25,7 @@
 
     <p>
         <label>Celsius</label>
-        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConvert(this.value)" onchange="temperatureConvert(Fahrenheit)">
+        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConvert(that.value)" onchange="temperatureConvert(that.value)">
     </p>
     <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
 
