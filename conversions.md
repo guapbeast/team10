@@ -40,14 +40,6 @@
     <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body {
-                margin: 0;
-                font-size: 28px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-        </style>
     </head>
     <body>
 
