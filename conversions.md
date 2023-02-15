@@ -21,21 +21,6 @@
 
 
      
-    <p>To Convert the Celsius temperature to Fahrenheit, inupt below.</p>
-
-    <p>
-        <label>Celsius</label>
-        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConvert(that.value)" onchange="temperatureConvert(that.value)">
-    </p>
-    <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
-
-    <script>
-        function temperatureConvert(valNum) {
-            valNum = parseFloat(valNum);
-            document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
-        }
-    </script>
-    
     
     <html>
     <head>
