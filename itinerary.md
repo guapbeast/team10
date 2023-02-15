@@ -19,5 +19,5 @@
     }
 </style>
 
-<button onclick="window.location.href='/team10/itinerary/new';" class="new">Add New</button>
+<button onclick="window.location.href='/team10/new';" class="new">Add New</button>
 
