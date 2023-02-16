@@ -18,7 +18,7 @@
   const resultContainer = document.getElementById("result");
 
   // prepare URL
-  var url = "https://music.nighthawkcodingsociety.tk/api/person/";
+  var url = "https://music.nighthawkcoders./api/person/";
   // Uncomment next line for localhost testing
   // url = "http://localhost:8032/api/person/";
 
