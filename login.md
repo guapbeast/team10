@@ -13,7 +13,7 @@
                 "content-type": "application/json",
             },
         };
-        fetch("http://music.nighthawkcoders.tk/authenticate", requestOptions).then((res) => {
+        fetch("https://music.nighthawkcoders.tk/authenticate", requestOptions).then((res) => {
             if (res.status == 200) {
                 window.location.replace("/team10/users");
             } else {
