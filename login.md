@@ -15,7 +15,7 @@
         };
         fetch("https://music.nighthawkcoders.tk/authenticate", requestOptions).then((res) => {
             if (res.status == 200) {
-                window.location.replace("/team10");
+                window.location.replace("/team10/users");
             } else {
                 document.getElementById('message').innerHTML = "Invalid email or password"
             }
