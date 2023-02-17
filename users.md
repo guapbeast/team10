@@ -1,3 +1,19 @@
+<h2 id="sql-database">SQL Database</h2>
+<!-- HTML table fragment for page -->
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>ID</th>
+    <th>Age</th>
+  </tr>
+  </thead>
+  <tbody id="result">
+    <!-- javascript generated data -->
+  </tbody>
+</table>
+
+<script>
 // prepare HTML result container for new output
   const resultContainer = document.getElementById("result");
 
@@ -63,3 +79,4 @@
     tr.appendChild(td);
     resultContainer.appendChild(tr);
   });
+</script>
