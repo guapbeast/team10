@@ -14,8 +14,8 @@
             // },
         };
         fetch(url, requestOptions).then((res) => {
-            if (res.status == 200) {
-                window.location.replace("/authenticate");
+            if (res.status == 201) {
+                window.location.replace("/login");
             } else {
                 document.getElementById('message').innerHTML = "Error: " + res.status;
             }
