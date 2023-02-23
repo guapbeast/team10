@@ -15,7 +15,7 @@
         };
         fetch(url, requestOptions).then((res) => {
             if (res.status == 201) {
-                window.location.replace("/login");
+                window.location.replace("/team10/login");
             } else {
                 document.getElementById('message').innerHTML = "Error: " + res.status;
             }
