@@ -8,7 +8,7 @@
             "content-type": "application/json",
         },
     };
-    fetch("https://music.nighthawkcoders.tk/logout", requestOptions).then((res) => {
+    fetch("https://music.nighthawkcoders.tk/blacklist/logout", requestOptions).then((res) => {
         if (res.status == 200) {
             window.location.replace("/team10/login");
         } else {
