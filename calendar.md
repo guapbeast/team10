@@ -38,22 +38,19 @@
     <br>
 
                 <table id="calendar" style="padding-bottom: 20px; margin-left:20px;margin-right:20px;">
-                    {% block links %}
+                
                     <tr>
                     {% for num in range(1, 32, 1) %}
                         <td class="days" id="calendar{{ num }}" style="border: 2px solid black; height: 200px; width: 200px"><div>{{ num }}
                         {% for row in table %}
                             {% if row.day == num %}
                                 <br>{{ row['information'] }}
-                            {% endif %}
-                        {% endfor %}
+                       
                         </div></td>
                     {% if num % 7 == 0 %}
                     </tr>
                     <tr>
-                    {% endif %}
-                    {% endfor %}
-                    {% endblock %}
+                
                         </tr>
 
 
@@ -115,7 +112,7 @@
 {#                    </div>#}
 {##}
 {##}
-{#                    {% block meta %}#}
+{#          #}
 {#                        <title>CRUD page</title>#}
 {#                        <script src={{  url_for("crud.static", filename="javascript/validation.js", version='101') }}></script>#}
 {#                        <script src={{  url_for("crud.static", filename="javascript/reload_page.js", version='101') }}></script>#}
@@ -161,7 +158,7 @@
 {##}
 {#                        </body>#}
 {##}
-{#                    {% endblock %}#}
+{#               #}
 {#</html>#}
 {##}
 {#    <div class="align-center pt-5" style="padding-left: 10px">#}
