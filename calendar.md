@@ -100,7 +100,7 @@
 {#                                                <optgroup label="day">#}
 {#                                                    {% for row in table %}#}
 {#                                                        <option label="{{ row['day'] }}">{{ row['day'] }}</option>#}
-{#                                                    {% endfor %}#}
+{#                                               #}
 {#                                                </optgroup>#}
 {#                                            </select>#}
 {#                                        </td>#}
@@ -116,7 +116,7 @@
 {#                        <title>CRUD page</title>#}
 {#                        <script src={{  url_for("crud.static", filename="javascript/validation.js", version='101') }}></script>#}
 {#                        <script src={{  url_for("crud.static", filename="javascript/reload_page.js", version='101') }}></script>#}
-{#                    {% endblock %}#}
+{#                  #}
 {##}
 {#                    <!-- CONTENT (in <body>), content for this page -->#}
 {#                        <div class="container py-4">#}
