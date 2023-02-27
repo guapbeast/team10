@@ -30,7 +30,7 @@
 <h1 id="itinerarylist">Your Itineraries</h1>
 </center>
 <div class="card">
-  <h1>Itinerary #1</h1>
+  <h3>Itinerary #1</h3>
   <div class="container">
     <h4><b>Trip to Hawaii</b></h4>
     <button>Edit</button>
