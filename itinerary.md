@@ -29,6 +29,7 @@
   <div class="container">
     <h4><b>Trip to Hawaii</b></h4>
     <button>Edit</button>
+    <button>Delete</button>
   </div>
 </div>
           <!-- <script>
