@@ -4,8 +4,9 @@
   <thead>
   <tr>
     <th>Name</th>
-    <th>ID</th>
+    <th>Email</th>
     <th>Age</th>
+    <th>Delete</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -24,7 +25,7 @@
 
   // set options for cross origin header request
   const options = {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'include', // include, *same-origin, omit
@@ -32,7 +33,15 @@
       'Content-Type': 'application/json',
     },
   };
-
+  function deleteUser(email) {
+    fetch("https://music.nighthawkcoders.tk/api/person/del/" + email, requestOptions).then((res) => {
+            if (res.status == 200 || res.status == 204) {
+                location.reload();
+            } else {
+                document.getElementById('message').innerHTML = "Error: " + res.status;
+            }
+        });
+  }
   // fetch the API
   fetch(url, options)
     // response is a RESTful "promise" on any successful fetch
@@ -57,14 +66,24 @@
             const name = document.createElement("td");
             const id = document.createElement("td");
             const age = document.createElement("td");
+            const remove = document.createElement("td");
+              const delete_but = document.createElement('button');
+              delete_but.id = row.id;
+              delete_but.innerHTML = "Delete";
+              delete_but.onclick = function () {
+                deleteUser(row.email)
+              }
+              remove.appendChild(delete_but);
             // data is specific to the API
             name.innerHTML = row.name; 
             id.innerHTML = row.email; 
             age.innerHTML = row.age; 
+            
             // this build td's into tr
             tr.appendChild(name);
             tr.appendChild(id);
             tr.appendChild(age);
+            tr.appendChild(remove);
             // add HTML to container
             resultContainer.appendChild(tr);
           }
