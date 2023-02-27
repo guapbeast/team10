@@ -17,7 +17,92 @@
         color: #fff;
         transition: 0.5s;
     }
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width:30%
+}
 </style>
 
 <button onclick="window.location.href='/team10/new';" class="new">Add New</button>
 
+<center>
+<h1 id="itinerarylist">Your Itineraries</h1>
+</center>
+<div class="card">
+<br><br>
+  <h3>Itinerary #1</h3>
+  <div class="container">
+    <h4><b>Trip to Hawaii</b></h4>
+    <button>Edit</button>
+    <button>Delete</button>
+    <br><br>
+  </div>
+</div>
+          <!-- <script>
+            function getItineraries() {
+                  fetch("https://music.nighthawkcoders.tk/itinerary/",options)
+                  .then(response => { 
+                        if (response.status !== 200) {
+                              const.errorMsg = 'Database response error: ' + response.status;
+                              console.log(errorMsg);
+                              const tr = document.createElement("tr");
+                              const td = document.createElement("td");
+                              td.innerHTML = errorMsg;
+                              tr.appendChild(td);
+                              itinerarylist.appendChild(tr);
+                              return;
+                        }
+                  //if valid
+                  while(itinerarylist.firstChild) {
+                        itinerarylist.removeChild(itinerarylist.firstChild);
+                  }
+            for (const row of data) {
+                    const card = document.createElement("div");
+                    card.classList.add("objectcard");
+                    itinerarylist.appendChild(card);
+                    const h3 = document.createElement("h3");
+                    h3.innerHTML = "Object #" + row.id;
+                    const mass = document.createElement("p");
+                    mass.innerHTML = "Mass: " + row.mass + "kg";
+                    const recKE = document.createElement("p");
+                    recKE.innerHTML = "Recent KE Calc: " + row.recentKE;
+                    const recPE = document.createElement("p");
+                    recPE.innerHTML = "Recent PE Calc: " + row.recentPE;
+                    card.appendChild(h3);
+                    card.appendChild(mass);
+                    card.appendChild(recKE);
+                    card.appendChild(recPE); 
+                    const buttonholder = document.createElement("div");
+                    buttonholder.style.whiteSpace = "nowrap";
+                    // create button and give classlist, add to card
+                    const button = document.createElement("button");
+                    button.classList.add("objectcardbutton");
+                    button.style.width = "40%";
+                    button.style.display = "inline-block";
+                    button.innerHTML = "Select";
+                    button.id = "objbutton" + row.id;
+                    button.addEventListener("click", function() {
+                        selectObj(row.id);
+                    });
+                    card.appendChild(button);
+                    // add deletebutton and give classlist
+                    const deletebutton = document.createElement("button");
+                    deletebutton.classList.add("objectcardbutton");
+                    deletebutton.innerHTML = "Delete";
+                    deletebutton.style.backgroundColor = "red";
+                    deletebutton.style.border = "1px solid red";
+                    deletebutton.style.width = "40%";
+                    deletebutton.style.display = "inline-block";
+                    deletebutton.addEventListener("click", function() {
+                        deleteObj(row.id);
+                    });
+                    card.appendChild(deletebutton);
+                }
+                storedinfo = data; 
+                });
+                  }
+            getItineraries();
+            </script>
+ -->
