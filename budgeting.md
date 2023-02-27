@@ -30,7 +30,7 @@
     }
 </script>
 
-<h1>Login</h1>
+<h1>Trip Budget</h1>
 <label for="trip">Trip ID:</label><br>
 <input type="text" id="trip" name="trip"><br>
 <label for="name">Trip Name:</label><br>
