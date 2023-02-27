@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="dollarAmount">Dollar Amount:</label>
+    <input type="text" id="dollarAmount"><br><br>
+    <label for="countryCurrency">Country Currency:</label>
+    <input type="text" id="countryCurrency"><br><br>
+    <button onclick="convertCurrency()">Convert Currency</button><br><br>
+    <div id="result">RESPONSE GOES HERE</div>
+
+    <script>
+      function convertCurrency() {
+        const dollarAmount = document.getElementById("dollarAmount").value;
+        const countryCurrency = document.getElementById("countryCurrency").value;
+	const body = `${dollarAmount}, ${countryCurrency}`;
+
+        fetch("http://127.0.0.1:8080/CurrencyConverterServer", {
+          method: "POST",
+          body: body,
+          headers: {
+            "Content-Type": "application/json"
+          }
+        })
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("result").innerHTML = data;
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+      }
+    </script>
+  </body>
+</html>
