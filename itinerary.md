@@ -17,6 +17,11 @@
         color: #fff;
         transition: 0.5s;
     }
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
 </style>
 
 <button onclick="window.location.href='/team10/new';" class="new">Add New</button>
