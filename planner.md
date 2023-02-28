@@ -9,25 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-        .page {
-            min-height: 100vh;
-            background-color: #66ccff;
-        }
-
-        html {
-            height: 100%;
-        }
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body{
-            font-family: 'Nunito', sans-serif;
-            font-size: 1rem;
-            min-height: 100%;
-        }
+    
 
         button{
             padding: 8px;
