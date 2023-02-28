@@ -29,17 +29,6 @@
             margin: auto;
         }
 
-        header{background-color: #1e88f1;}
-
-        #header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            min-height: 70px;
-            padding: 0 20px;
-            background: #1e88f1;
-        }
-
         #header button{
             font-family: Lobster;
         }
