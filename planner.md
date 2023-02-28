@@ -9,6 +9,25 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+        .page {
+            min-height: 100vh;
+            background-color: #66ccff;
+        }
+
+        html {
+            height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            min-height: 100%;
+        }
 
         button{
             padding: 8px;
@@ -17,6 +36,30 @@
             border: 1px solid lightgray;
             border-radius: 5px;
             background: whitesmoke;
+        }
+
+        button:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .container{
+            width: 1280px;
+            margin: auto;
+        }
+
+        header{background-color: #1e88f1;}
+
+        #header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 70px;
+            padding: 0 20px;
+            background: #1e88f1;
+        }
+
+        #header button{
+            font-family: Lobster;
         }
 
         #create_card{
@@ -65,7 +108,7 @@
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
             position: relative;
         }
-        
+
         .plans h2{font-size: 1rem;}
 
         .fa-minus{
@@ -127,11 +170,11 @@
             <div class="container">
                 <div id="create_card">
                     <h2>Create plans</h2>
-                    <label for="place">place</label>
-                    <textarea id="place" maxlength="280"></textarea>
-                    <label for="plans" maxlength="280">plans</label>
+                    <label for="question">Question</label>
+                    <textarea id="question" maxlength="280"></textarea>
+                    <label for="answer" maxlength="280">Answer</label>
                     <br>
-                    <textarea id="plans"></textarea>
+                    <textarea id="answer"></textarea>
                     <div>
                         <button id="save_card">Save</button> <button id="close_card_box">Close</button>
                     </div>
@@ -171,17 +214,17 @@
 
         plansMaker = (text, delThisIndex) => {
             const plans = document.createElement("div");
-            const place = document.createElement('h2');
-            const plans = document.createElement('h2');
+            const question = document.createElement('h2');
+            const answer = document.createElement('h2');
             const del = document.createElement('i');
 
             plans.className = 'plans';
 
-            place.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
-            place.textContent = text.my_place;
+            question.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
+            question.textContent = text.my_question;
 
-            plans.setAttribute("style", "text-align:center; display:none; color:red");
-            plans.textContent = text.my_plans;
+            answer.setAttribute("style", "text-align:center; display:none; color:red");
+            answer.textContent = text.my_answer;
 
             del.className = "fas fa-minus";
             del.addEventListener("click", () => {
@@ -190,15 +233,15 @@
                 window.location.reload();
             })
 
-            plans.appendChild(place);
-            plans.appendChild(plans);
+            plans.appendChild(question);
+            plans.appendChild(answer);
             plans.appendChild(del);
 
             plans.addEventListener("click", () => {
-                if(plans.style.display == "none")
-                    plans.style.display = "block";
+                if(answer.style.display == "none")
+                    answer.style.display = "block";
                 else
-                    plans.style.display = "none";
+                    answer.style.display = "none";
             })
 
             document.querySelector("#plans").appendChild(plans);
@@ -207,19 +250,19 @@
         contentArray.forEach(plansMaker);
 
         addplans = () => {
-            const place = document.querySelector("#place");
-            const plans = document.querySelector("#plans");
+            const question = document.querySelector("#question");
+            const answer = document.querySelector("#answer");
 
             let plans_info = {
-                'my_place' : place.value,
-                'my_plans'  : plans.value
+                'my_question' : question.value,
+                'my_answer'  : answer.value
             }
 
             contentArray.push(plans_info);
             localStorage.setItem('items', JSON.stringify(contentArray));
             plansMaker(contentArray[contentArray.length - 1], contentArray.length - 1);
-            place.value = "";
-            plans.value = "";
+            question.value = "";
+            answer.value = "";
         }
     </script>
     </body>
