@@ -110,3 +110,7 @@ textarea:-moz-placeholder {
             <br><br>
           <!-- End of body content specific to page -->
 </body>
+
+<script>
+
+</script>
