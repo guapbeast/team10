@@ -1,79 +1,61 @@
-    import java. util.Scanner;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpHandler;
+import com.sun.net.httpserver.HttpServer;
 
-/**
- * CurrencyConverter
- */
 public class CurrencyConverter {
+  public static void main(String[] args) throws Exception {
+    HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+    server.createContext("/convertCurrency", new ConvertCurrencyHandler());
+    server.setExecutor(null);
+    server.start();
+  }
 
-    public static void main(String[] args) {
-        System.out.println("1 Rupee");
-        System.out.println("2 Dollar");
-        System.out.println("3 Euro");
-        try (// take input
-        Scanner sc = new Scanner(System.in)) {
-            System. out.println("Choose the currency");
-            int choice = sc.nextInt();
-            System.out.println("Enter the amount");
-            double amount = sc.nextDouble();
-            // convert the amount
-            switch (choice) {
-                case 1:
-                    Rupee(amount);
-                    break;
-                case 2:
-                    Dollar_to_other(amount);
-                    break;
-                case 3:
-                    Euro_to_other(amount);
-                    break;
-                default:
-                    System.out.println("Invalid choice");
-            }
-        }
+  static class ConvertCurrencyHandler implements HttpHandler {
+    public void handle(HttpExchange exchange) throws IOException {
+      String requestMethod = exchange.getRequestMethod();
+      if (requestMethod.equalsIgnoreCase("POST")) {
+        InputStream requestBody = exchange.getRequestBody();
+        String requestBodyString = new String(requestBody.readAllBytes());
 
+        String[] requestBodyValues = requestBodyString.split(",");
+        Double dollarAmount = Double.parseDouble(requestBodyValues[0].trim());
+        String countryCurrency = requestBodyValues[1].trim();
+
+        Double convertedCurrency = convertCurrency(dollarAmount, countryCurrency);
+
+        String responseBody = "<html><body><h2>Converted currency: " + convertedCurrency + "</h2></body></html>";
+
+        exchange.sendResponseHeaders(200, responseBody.getBytes().length);
+        OutputStream outputStream = exchange.getResponseBody();
+        outputStream.write(responseBody.getBytes());
+        outputStream.flush();
+        outputStream.close();
+      } else {
+        exchange.sendResponseHeaders(405, -1);
+      }
     }
+  }
 
-private static void Rupee(double amount) {
+  private static Double convertCurrency(Double dollarAmount, String countryCurrency) {
+    Double exchangeRate;
+    switch (countryCurrency) {
+      case "EUR":
+        exchangeRate = 0.82;
+        break;
+      case "GBP":
+        exchangeRate = 0.72;
+        break;
+      case "JPY":
+        exchangeRate = 105.72;
+        break;
+      default:
+        exchangeRate = 1.0;
+        break;
     }
-
-public static void Rupee_to_other(double amt) {
-    System.out.println("1 Rupee = " + 0.013 + " Dollar");
-    System.out.println();
-
-    System.out.println(amt+" Rupee = " + (amt*0.013) + " Dollar");
-    System.out.println();
-
-    System.out.println("1 Rupee = " + 0.012 + " Euro");
-    System.out.println();
-    System.out.println(amt+" Rupee = " + (amt*0.012) + " Euro");
-    System.out.println();
-
-}
-    
-
-public static void Dollar_to_other(double amt) {
-    System.out.println("1 Dollar = " + 79.37 + " Rupee");
-    System.out.println();
-    System.out.println(amt+" Dollar = " + (amt*79.37) + " Rupee");
-    System.out.println();
-
-    System.out.println("1 Dollar= " + 0.98 + " Euro");
-    System.out.println();
-
-    System.out.println(amt+" Dollar = " + (amt*0.98) + " Euro");
-}
-
-    
-
-public static void Euro_to_other(double amt){
-    System.out.println("1 Euro = " + 80.85 + " Rupee");
-    System.out.println();
-    System.out.println(amt+" Euro = " + (amt*80.85) + " Rupee");
-    System.out.println();
-
-    System.out.println("1 Euro = " + 1.02 + " Dollar");
-    System.out.println();
-
-    System.out.println(amt+" Euro = " + (amt*1.02) + " Dollar");
-}
+    return dollarAmount * exchangeRate;
+  }
 }
