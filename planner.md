@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+        <link rel="shortcut icon" type="image/png" href="plans.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
@@ -44,7 +44,7 @@
 
         #create_card button{width: fit-content;}
 
-        #flashcards{
+        #plans{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,7 +55,7 @@
             padding: 0px 10px;
         }
 
-        .flashcard{
+        .plans{
             width: 370px;
             height: 200px;
             word-wrap: break-word;
@@ -66,7 +66,7 @@
             position: relative;
         }
 
-        .flashcard h2{font-size: 1rem;}
+        .plans h2{font-size: 1rem;}
 
         .fa-minus{
             top: 3%;
@@ -83,9 +83,9 @@
         }
 
         @media(max-width:768px){
-            .flashcard{margin: auto;}
+            .plans{margin: auto;}
 
-            .flashcard{
+            .plans{
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
@@ -101,11 +101,11 @@
 
             #create_card{width: 95%;}
 
-            .flashcard{width: 100%;}
+            .plans{width: 100%;}
 
         }
     </style>
-        <title>Flashcards</title>
+        <title>plans</title>
     </head>
     <body>
 
@@ -114,7 +114,7 @@
         <header>
             <div class="container">
                 <div id="header">
-                    <h1>Flashcards</h1>
+                    <h1>plans</h1>
                     <div>
                         <button id="show_card_box">Add Card</button>
                         <button id="delete_cards">Delete Cards</button>
@@ -126,7 +126,7 @@
         <section>
             <div class="container">
                 <div id="create_card">
-                    <h2>Create Flashcard</h2>
+                    <h2>Create plans</h2>
                     <label for="question">Question</label>
                     <textarea id="question" maxlength="280"></textarea>
                     <label for="answer" maxlength="280">Answer</label>
@@ -142,7 +142,7 @@
         <section class="page">
             <div class="container">
                 </div>
-                <div id="flashcards"></div>
+                <div id="plans"></div>
             </div>
         </section>
 
@@ -152,12 +152,12 @@
         var contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
         document.getElementById("save_card").addEventListener("click", () => {
-            addFlashcard();
+            addplans();
         });
 
         document.getElementById("delete_cards").addEventListener("click", () => {
             localStorage.clear();
-            flashcards.innerHTML = '';
+            plans.innerHTML = '';
             contentArray = [];
         });
 
@@ -169,13 +169,13 @@
             document.getElementById("create_card").style.display = "none";
         });
 
-        flashcardMaker = (text, delThisIndex) => {
-            const flashcard = document.createElement("div");
+        plansMaker = (text, delThisIndex) => {
+            const plans = document.createElement("div");
             const question = document.createElement('h2');
             const answer = document.createElement('h2');
             const del = document.createElement('i');
 
-            flashcard.className = 'flashcard';
+            plans.className = 'plans';
 
             question.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
             question.textContent = text.my_question;
@@ -190,34 +190,34 @@
                 window.location.reload();
             })
 
-            flashcard.appendChild(question);
-            flashcard.appendChild(answer);
-            flashcard.appendChild(del);
+            plans.appendChild(question);
+            plans.appendChild(answer);
+            plans.appendChild(del);
 
-            flashcard.addEventListener("click", () => {
+            plans.addEventListener("click", () => {
                 if(answer.style.display == "none")
                     answer.style.display = "block";
                 else
                     answer.style.display = "none";
             })
 
-            document.querySelector("#flashcards").appendChild(flashcard);
+            document.querySelector("#plans").appendChild(plans);
         }
 
-        contentArray.forEach(flashcardMaker);
+        contentArray.forEach(plansMaker);
 
-        addFlashcard = () => {
+        addplans = () => {
             const question = document.querySelector("#question");
             const answer = document.querySelector("#answer");
 
-            let flashcard_info = {
+            let plans_info = {
                 'my_question' : question.value,
                 'my_answer'  : answer.value
             }
 
-            contentArray.push(flashcard_info);
+            contentArray.push(plans_info);
             localStorage.setItem('items', JSON.stringify(contentArray));
-            flashcardMaker(contentArray[contentArray.length - 1], contentArray.length - 1);
+            plansMaker(contentArray[contentArray.length - 1], contentArray.length - 1);
             question.value = "";
             answer.value = "";
         }
