@@ -24,3 +24,6 @@
 | Allie Xiao | Deployment Manager | [Allie's Commits](https://github.com/guapbeast/team10/commits?author=xiaoa0) | [Allie's Github Profile](https://github.com/xiaoa0) |
 | Aidan Wu | Backend Developer | [Aidan's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | [Aidan's Github Profile](https://github.com/aidanywu) |
 | Vaishavi Jayashankar | Backend Developer | [Vaishavi's Commits](https://github.com/guapbeast/team10/commits?author=aidanywu) | [Vaishavi's Github Profile](https://github.com/aidanywu) |
+
+### Credits
+Original code from [jm1021](https://github.com/jm1021/leuck_reunion)
