@@ -105,6 +105,7 @@
             }
         }
 
+<!--> determines the width and characteristics of the planner cards -->
         @media(max-width:480px){
             #header{
                 padding: 20px;
@@ -155,7 +156,7 @@
 
         <section class="page">
             <div class="container">
-                </div>
+            
                 <div id="plans"></div>
             </div>
         </section>
