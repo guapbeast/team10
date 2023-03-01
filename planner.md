@@ -69,6 +69,17 @@
             padding: 0px 10px;
         }
 
+<!--> display and update of cards -->
+        .plans{
+            width: 370px;
+            height: 200px;
+            word-wrap: break-word;
+            margin: 10px;
+            background:#fff;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+            position: relative;
+        }
 
         .plans h2{font-size: 1rem;}
 
@@ -141,7 +152,7 @@
                         <button id="save_card">Save</button> <button id="close_card_box">Close</button>
                     </div>
                 </div>
-            </div>
+        
         </section>
 
         <section class="page">
