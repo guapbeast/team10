@@ -69,7 +69,6 @@
             padding: 0px 10px;
         }
 
-<!--> display and update of cards -->
         .plans{
             width: 370px;
             height: 200px;
@@ -106,7 +105,6 @@
             }
         }
 
-<!--> determines the width and characteristics of the planner cards -->
         @media(max-width:480px){
             #header{
                 padding: 20px;
@@ -152,7 +150,7 @@
                         <button id="save_card">Save</button> <button id="close_card_box">Close</button>
                     </div>
                 </div>
-        
+            </div>
         </section>
 
         <section class="page">
