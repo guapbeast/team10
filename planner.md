@@ -43,10 +43,7 @@
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
         }
 
-        #create_card h2{
-            color: black;
-            text-align: center;
-        }
+  
 
         #create_card textarea{
             width: 100%;
