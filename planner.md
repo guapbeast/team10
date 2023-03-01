@@ -105,6 +105,14 @@
             }
         }
 
+<!--> determines the width and characteristics of the planner cards -->
+        @media(max-width:480px){
+            #header{
+                padding: 20px;
+                gap: 10px;
+                flex-direction: column;
+                align-items: center;
+            }
 
             #create_card{width: 95%;}
 
