@@ -141,11 +141,11 @@
             <div class="container">
                 <div id="create_card">
                     <h2>Create plans</h2>
-                    <label for="question">Question</label>
-                    <textarea id="question" maxlength="280"></textarea>
-                    <label for="answer" maxlength="280">Answer</label>
+                    <label for="Destination">Destination</label>
+                    <textarea id="Destination" maxlength="280"></textarea>
+                    <label for="Plans" maxlength="280">Plans</label>
                     <br>
-                    <textarea id="answer"></textarea>
+                    <textarea id="Plans"></textarea>
                     <div>
                         <button id="save_card">Save</button> <button id="close_card_box">Close</button>
                     </div>
@@ -185,17 +185,17 @@
 
         plansMaker = (text, delThisIndex) => {
             const plans = document.createElement("div");
-            const question = document.createElement('h2');
-            const answer = document.createElement('h2');
+            const Destination = document.createElement('h2');
+            const Plans = document.createElement('h2');
             const del = document.createElement('i');
 
             plans.className = 'plans';
 
-            question.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
-            question.textContent = text.my_question;
+            Destination.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
+            Destination.textContent = text.my_Destination;
 
-            answer.setAttribute("style", "text-align:center; display:none; color:red");
-            answer.textContent = text.my_answer;
+            Plans.setAttribute("style", "text-align:center; display:none; color:red");
+            Plans.textContent = text.my_Plans;
 
             del.className = "fas fa-minus";
             del.addEventListener("click", () => {
@@ -204,15 +204,15 @@
                 window.location.reload();
             })
 
-            plans.appendChild(question);
-            plans.appendChild(answer);
+            plans.appendChild(Destination);
+            plans.appendChild(Plans);
             plans.appendChild(del);
 
             plans.addEventListener("click", () => {
-                if(answer.style.display == "none")
-                    answer.style.display = "block";
+                if(Plans.style.display == "none")
+                    Plans.style.display = "block";
                 else
-                    answer.style.display = "none";
+                    Plans.style.display = "none";
             })
 
             document.querySelector("#plans").appendChild(plans);
@@ -221,19 +221,19 @@
         contentArray.forEach(plansMaker);
 
         addplans = () => {
-            const question = document.querySelector("#question");
-            const answer = document.querySelector("#answer");
+            const Destination = document.querySelector("#Destination");
+            const Plans = document.querySelector("#Plans");
 
             let plans_info = {
-                'my_question' : question.value,
-                'my_answer'  : answer.value
+                'my_Destination' : Destination.value,
+                'my_Plans'  : Plans.value
             }
 
             contentArray.push(plans_info);
             localStorage.setItem('items', JSON.stringify(contentArray));
             plansMaker(contentArray[contentArray.length - 1], contentArray.length - 1);
-            question.value = "";
-            answer.value = "";
+            Destination.value = "";
+            Plans.value = "";
         }
     </script>
     </body>
