@@ -43,6 +43,41 @@
 
 <br>
 <br>
+<script>
+  const itineraryList = document.querySelector("itinerarylist");
+  const response await fetch("https://music.nighthawkcoders.tk/itinerary/", {
+    method: "POST",
+    credentials: 'include',
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify{{name, packing, travel, food, hotel, activities, notes}};
+    if(!response.ok) {
+      alert("Failed to add itinerary. Please try again later");
+      return;
+    }
+    //
+  })
+  const endpoint = `https://music.nighthawkcoders.tk/itinerary/${name}`;
+  fetch(endpoint, {
+    method: "DELETE",
+    credentials: 'include'
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Failed to delete itinerary. Please try again later");
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+      alert("Itinerary deleted");
+    })
+    .catch(error => {
+      console.error(error);
+      alert("Failed to delete itinerary. Please try again later");
+    });
+</script>
 
           <!-- <script>
             function getItineraries() {
