@@ -45,7 +45,10 @@
   };
 
   function deleteUser(email) {
+    console.log(email);
+    console.log("https://music.nighthawkcoders.tk/api/person/del/" + email);
     fetch("https://music.nighthawkcoders.tk/api/person/del/" + email, requestOptions).then((res) => {
+            console.log(res);
             if (res.status == 200 || res.status == 204) {
                 location.reload();
             } else {
@@ -81,6 +84,7 @@
               const delete_but = document.createElement('button');
               delete_but.id = row.id;
               delete_but.innerHTML = "Delete";
+              console.log(row.email);
               delete_but.onclick = function () {
                 deleteUser(row.email)
               }
