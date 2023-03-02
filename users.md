@@ -44,10 +44,10 @@
     },
   };
 
-  function deleteUser(email) {
-    console.log(email);
-    console.log("https://music.nighthawkcoders.tk/api/person/del/" + email);
-    fetch("https://music.nighthawkcoders.tk/api/person/del/" + email, requestOptions).then((res) => {
+  function deleteUser(id) {
+    console.log(id);
+    console.log("https://music.nighthawkcoders.tk/api/person/delete/" + id);
+    fetch("https://music.nighthawkcoders.tk/api/person/delete/" + id, requestOptions).then((res) => {
             console.log(res);
             if (res.status == 200 || res.status == 204) {
                 location.reload();
@@ -85,8 +85,9 @@
               delete_but.id = row.id;
               delete_but.innerHTML = "Delete";
               console.log(row.email);
+              console.log(row.id);
               delete_but.onclick = function () {
-                deleteUser(row.email)
+                deleteUser(row.id)
               }
               remove.appendChild(delete_but);
             // data is specific to the API
