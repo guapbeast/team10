@@ -76,7 +76,7 @@ textarea:-moz-placeholder {
           <h1>Itinerary Planning</h1>
           <b><hr style="height:2px;color:black;width:25%;background-color:black"></b>
           <br><br>
-          <input type="text" id='name-input' placeholder='Enter itinerary name'></input>
+          <input type="text" id='name-input' placeholder='Enter itinerary name'>
           </center>
           <div class="parent">
             <div class="div1"><img style="margin-top: 95%; margin-left: 0%; width: 100px; height: 100px;" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/suitcase.png"></div>
