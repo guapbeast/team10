@@ -4,11 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+        <link rel="shortcut icon" type="image/png" href="plans.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+    
 
         button{
             padding: 8px;
@@ -17,6 +18,19 @@
             border: 1px solid lightgray;
             border-radius: 5px;
             background: whitesmoke;
+        }
+
+        button:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .container{
+            width: 1280px;
+            margin: auto;
+        }
+
+        #header button{
+            font-family: Lobster;
         }
 
         #create_card{
@@ -44,7 +58,7 @@
 
         #create_card button{width: fit-content;}
 
-        #flashcards{
+        #plans{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,7 +69,7 @@
             padding: 0px 10px;
         }
 
-        .flashcard{
+        .plans{
             width: 370px;
             height: 200px;
             word-wrap: break-word;
@@ -66,7 +80,7 @@
             position: relative;
         }
 
-        .flashcard h2{font-size: 1rem;}
+        .plans h2{font-size: 1rem;}
 
         .fa-minus{
             top: 3%;
@@ -83,14 +97,15 @@
         }
 
         @media(max-width:768px){
-            .flashcard{margin: auto;}
+            .plans{margin: auto;}
 
-            .flashcard{
+            .plans{
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
         }
 
+<!--> determines the width and characteristics of the planner cards -->
         @media(max-width:480px){
             #header{
                 padding: 20px;
@@ -101,11 +116,11 @@
 
             #create_card{width: 95%;}
 
-            .flashcard{width: 100%;}
+            .plans{width: 100%;}
 
         }
     </style>
-        <title>Flashcards</title>
+        <title>plans</title>
     </head>
     <body>
 
@@ -114,7 +129,7 @@
         <header>
             <div class="container">
                 <div id="header">
-                    <h1>Flashcards</h1>
+                    <h1>plans</h1>
                     <div>
                         <button id="show_card_box">Add Card</button>
                         <button id="delete_cards">Delete Cards</button>
@@ -126,12 +141,12 @@
         <section>
             <div class="container">
                 <div id="create_card">
-                    <h2>Create Flashcard</h2>
-                    <label for="question">Question</label>
-                    <textarea id="question" maxlength="280"></textarea>
-                    <label for="answer" maxlength="280">Answer</label>
+                    <h2>Create plans</h2>
+                    <label for="Destination">Destination</label>
+                    <textarea id="Destination" maxlength="280"></textarea>
+                    <label for="Plans" maxlength="280">Plans</label>
                     <br>
-                    <textarea id="answer"></textarea>
+                    <textarea id="Plans"></textarea>
                     <div>
                         <button id="save_card">Save</button> <button id="close_card_box">Close</button>
                     </div>
@@ -141,8 +156,8 @@
 
         <section class="page">
             <div class="container">
-                </div>
-                <div id="flashcards"></div>
+            
+                <div id="plans"></div>
             </div>
         </section>
 
@@ -152,12 +167,12 @@
         var contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
         document.getElementById("save_card").addEventListener("click", () => {
-            addFlashcard();
+            addplans();
         });
 
         document.getElementById("delete_cards").addEventListener("click", () => {
             localStorage.clear();
-            flashcards.innerHTML = '';
+            plans.innerHTML = '';
             contentArray = [];
         });
 
@@ -169,19 +184,19 @@
             document.getElementById("create_card").style.display = "none";
         });
 
-        flashcardMaker = (text, delThisIndex) => {
-            const flashcard = document.createElement("div");
-            const question = document.createElement('h2');
-            const answer = document.createElement('h2');
+        plansMaker = (text, delThisIndex) => {
+            const plans = document.createElement("div");
+            const Destination = document.createElement('h2');
+            const Plans = document.createElement('h2');
             const del = document.createElement('i');
 
-            flashcard.className = 'flashcard';
+            plans.className = 'plans';
 
-            question.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
-            question.textContent = text.my_question;
+            Destination.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
+            Destination.textContent = text.my_Destination;
 
-            answer.setAttribute("style", "text-align:center; display:none; color:red");
-            answer.textContent = text.my_answer;
+            Plans.setAttribute("style", "text-align:center; display:none; color:red");
+            Plans.textContent = text.my_Plans;
 
             del.className = "fas fa-minus";
             del.addEventListener("click", () => {
@@ -190,36 +205,36 @@
                 window.location.reload();
             })
 
-            flashcard.appendChild(question);
-            flashcard.appendChild(answer);
-            flashcard.appendChild(del);
+            plans.appendChild(Destination);
+            plans.appendChild(Plans);
+            plans.appendChild(del);
 
-            flashcard.addEventListener("click", () => {
-                if(answer.style.display == "none")
-                    answer.style.display = "block";
+            plans.addEventListener("click", () => {
+                if(Plans.style.display == "none")
+                    Plans.style.display = "block";
                 else
-                    answer.style.display = "none";
+                    Plans.style.display = "none";
             })
 
-            document.querySelector("#flashcards").appendChild(flashcard);
+            document.querySelector("#plans").appendChild(plans);
         }
 
-        contentArray.forEach(flashcardMaker);
+        contentArray.forEach(plansMaker);
 
-        addFlashcard = () => {
-            const question = document.querySelector("#question");
-            const answer = document.querySelector("#answer");
+        addplans = () => {
+            const Destination = document.querySelector("#Destination");
+            const Plans = document.querySelector("#Plans");
 
-            let flashcard_info = {
-                'my_question' : question.value,
-                'my_answer'  : answer.value
+            let plans_info = {
+                'my_Destination' : Destination.value,
+                'my_Plans'  : Plans.value
             }
 
-            contentArray.push(flashcard_info);
+            contentArray.push(plans_info);
             localStorage.setItem('items', JSON.stringify(contentArray));
-            flashcardMaker(contentArray[contentArray.length - 1], contentArray.length - 1);
-            question.value = "";
-            answer.value = "";
+            plansMaker(contentArray[contentArray.length - 1], contentArray.length - 1);
+            Destination.value = "";
+            Plans.value = "";
         }
     </script>
     </body>
