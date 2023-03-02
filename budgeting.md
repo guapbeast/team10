@@ -47,3 +47,9 @@
 <input type="text" id="hotel2" name="hotel2"><br>
 <input type="submit" value="Save Budget" onclick="post()">
 <p id="message"></p>
+
+
+<label for="budgets">Select trip budget:</label>
+<select name="budgets" id="budgets">
+  <option value="01">Test</option>
+</select>

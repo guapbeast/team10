@@ -12,7 +12,7 @@
         if (res.status == 200) {
             window.location.replace("/team10/login");
         } else {
-            document.getElementById('message').innerHTML = "Error: " + res.status;
+            document.getElementById('message').innerHTML = "Not signed in";
         }
     });
 </script>

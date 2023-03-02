@@ -18,7 +18,7 @@
         transition: 0.5s;
     }
     .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 #c30000;
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
   width:30%
@@ -31,15 +31,44 @@
 <h1 id="itinerarylist">Your Itineraries</h1>
 </center>
 <div class="card">
-<br><br>
+<br>
   <h3>Itinerary #1</h3>
   <div class="container">
     <h4><b>Trip to Hawaii</b></h4>
     <button>Edit</button>
-    <button>Delete</button>
-    <br><br>
+    <button onclick="deleteitineraries()">Delete</button>
+    <br><br><br><br><br><br>
   </div>
 </div>
+
+<br>
+<br>
+<script>
+fetch("https://music.nighthawkcoders.tk/itinerary/");
+  const itineraryList = document.querySelector("itinerarylist");
+  function deleteitineraries() {
+  const endpoint = `https://music.nighthawkcoders.tk/itinerary/${name}`;
+  fetch(endpoint, {
+    method: "DELETE",
+    credentials: 'include'
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Failed to delete itinerary. Please try again later");
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+      alert("Itinerary deleted");
+    })
+    .catch(error => {
+      console.error(error);
+      alert("Failed to delete itinerary. Please try again later");
+    });
+    }
+</script>
+
           <!-- <script>
             function getItineraries() {
                   fetch("https://music.nighthawkcoders.tk/itinerary/",options)
