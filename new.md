@@ -79,7 +79,7 @@ textarea:-moz-placeholder {
           </center>
           <div class="parent">
           <center>
-          <textarea id='name-input' placeholder='Enter itinerary name'></textarea>
+          <input type="text" id='name-input' placeholder='Enter itinerary name'></input>
           </center>
             <div class="div1"><img style="margin-top: 95%; margin-left: 0%; width: 100px; height: 100px;" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/suitcase.png"></div>
             <div class="div2" style="margin-left:25%"> <h2 style="margin-left:50%">Packing</h2> <br> 

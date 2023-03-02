@@ -36,7 +36,7 @@
   <div class="container">
     <h4><b>Trip to Hawaii</b></h4>
     <button>Edit</button>
-    <button>Delete</button>
+    <button onclick="deleteitineraries()">Delete</button>
     <br><br><br><br><br><br>
   </div>
 </div>
@@ -67,7 +67,6 @@ fetch("https://music.nighthawkcoders.tk/itinerary/");
       alert("Failed to delete itinerary. Please try again later");
     });
     }
-    deleteitineraries();
 </script>
 
           <!-- <script>
